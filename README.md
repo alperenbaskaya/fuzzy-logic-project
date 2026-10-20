@@ -50,3 +50,26 @@ python -m experiments.baseline.run_iris
 ```
 
 Sonuçlar `results/tables/` altına yazılır.
+
+## Reproduction Experiments
+
+### E1 — Iris (makale Tablo 7)
+
+20 bağımsız tekrarın ortalaması. Tam tablo: [`results/tables/e1_iris_vs_paper.md`](results/tables/e1_iris_vs_paper.md).
+
+| Self (eğitim) | Algoritma | DR % (bizim / makale) | FAR % (bizim / makale) |
+|---|---|---|---|
+| Versicolor (%50) | V-Detector | 94.5 / 96.5 | 10.8 / 8.6 |
+| Versicolor (%50) | NaIM-IDS | 95.8 / 99.5 | 4.5 / 3.3 |
+| Virginica (%50) | V-Detector | 97.8 / 96.4 | 17.9 / 10.0 |
+| Virginica (%50) | NaIM-IDS | 96.7 / 99.6 | 4.5 / 7.8 |
+| Versicolor (%100) | NaIM-IDS | 99.2 / 100.0 | 0.0 / 0.0 |
+
+İlk gözlemler:
+
+- Makaledeki ana örüntü yeniden üretildi: NaIM-IDS, V-Detector'a göre yanlış alarm oranını %50 eğitimde 2–4 kat düşürüyor.
+- Tespit oranımız makaleden 1–4 puan düşük. Self küresinin (r_self) içinde kalan non-self örnekler hiçbir dedektörle yakalanamaz; makale bu parametreyi raporlamıyor.
+- Dedektör sayıları makaleden iki mertebe az (ör. 5.7 / 260.3). Bizim dedektörlerimiz en büyük geçerli yarıçapla üretildiği için az sayıda büyük küre yetiyor. Makalenin dedektör yarıçapını nasıl sınırladığı belirtilmemiş.
+- Eğitim süreleri farklı donanım ve uygulama dilleri nedeniyle doğrudan karşılaştırılamaz.
+
+Varsayımlar: [`docs/ASSUMPTIONS.md`](docs/ASSUMPTIONS.md).
