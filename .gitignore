@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# Ham veri setleri repoya yüklenmez (boyut / lisans). data/README.md'ye bakın.
+data/raw/
+data/*.csv
+data/*.zip
+data/*.txt
+
+# Sistem
+.DS_Store
+Thumbs.db
+
+# Gizli bilgiler
+.env
