@@ -7,7 +7,7 @@ Bulanık Mantık dersi dönem projesi. Referans makaledeki yapay bağışıklık
 ## Student Information
 
 - Öğrenci: Alperen Başkaya
-- Öğrenci no: _doldurulacak_
+- Öğrenci no: 1306220066
 - Ders: Bulanık Mantık, 2026 Güz
 
 ## Original Paper
