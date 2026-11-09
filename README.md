@@ -27,6 +27,7 @@ src/
   rfo.py         Red Fox Optimization (sınır dedektörleri)
   ga.py          ikili kodlu genetik algoritma (sınır dışı dedektörler)
   naim.py        NaIM-IDS uyarlanabilir dedektör üretimi (makale Bölüm 3.2-3.3)
+  fuzzy_detect.py  bulanık tespit katmanı (MF, Mamdani, Sugeno, durulaştırma)
   metrics.py     DR, FAR, accuracy, precision, F1
 experiments/baseline/   yeniden üretim deneyleri (E1-E3)
 experiments/proposed/   özgün katkı deneyleri (E4-E8)
@@ -47,6 +48,10 @@ pip install -r requirements.txt
 ```bash
 # E1: Iris yeniden üretim deneyi (makale Tablo 7)
 python -m experiments.baseline.run_iris
+
+# E4/E5/E7: keskin vs bulanık tespit + gürültü testi, sonra grafikler
+python -m experiments.proposed.run_fuzzy_iris
+python -m experiments.proposed.plot_figures
 ```
 
 Sonuçlar `results/tables/` altına yazılır.
@@ -73,3 +78,37 @@ Sonuçlar `results/tables/` altına yazılır.
 - Eğitim süreleri farklı donanım ve uygulama dilleri nedeniyle doğrudan karşılaştırılamaz.
 
 Varsayımlar: [`docs/ASSUMPTIONS.md`](docs/ASSUMPTIONS.md).
+
+## Proposed Improvement: Bulanık Tespit Katmanı
+
+Makalede karar keskindir: örnek bir dedektör küresinin içindeyse saldırı, değilse normal kabul edilir. Bu çalışmada eğitilmiş dedektörlerin üzerine elle yazılmış bir bulanık çıkarım sistemi (FIS) eklendi. Sistem iki girdiden 0–1 aralığında bir anomali derecesi üretir.
+
+- **g1, kapsama oranı:** max r_i / ‖x − c_i‖. Değer 1 veya üzerindeyse örnek bir kürenin içindedir. Dilsel terimler: Dışarıda, Sınırda, İçeride.
+- **g2, self uzaklığı:** en yakın self örneğe uzaklık / d_ref. Dilsel terimler: Yakın, Orta, Uzak.
+- **Çıktı:** Normal, Şüpheli, Saldırı. 9 kural kullanılır, VE işlemi için min alınır. Mamdani (min kırpma, max birleştirme) ve 0. derece Sugeno birlikte uygulandı.
+- **Karşılaştırılan varyantlar:** üçgen ve Gauss üyelik fonksiyonları; centroid, bisector ve MOM durulaştırma.
+
+![Üyelik fonksiyonları](results/figures/fis_membership.png)
+![Kontrol yüzeyi](results/figures/fis_surface.png)
+
+## Comparative Results (Iris, ayrık test, 3 sınıf × 20 tekrar)
+
+Tam tablolar: [`results/tables/e4_e7_fuzzy_iris.md`](results/tables/e4_e7_fuzzy_iris.md).
+
+| Yöntem | DR % | FAR % | F1 % | AUC % |
+|---|---|---|---|---|
+| Keskin (makale) | 94.8 | 5.0 | 96.1 | 94.9 |
+| Kapsama skoru, FIS yok | – | – | – | 98.5 |
+| FIS üçgen Mamdani centroid | 83.1 | 0.9 | 89.6 | 96.7 |
+| FIS Gauss Sugeno | 82.9 | 0.6 | 89.6 | 98.5 |
+
+![Gürültü testi](results/figures/e7_noise.png)
+
+**Bulgular**
+
+1. Bulanık katman yanlış alarm oranını 5.0'dan 0.9'a indirir (Wilcoxon p < 0.001). Buna karşılık tespit oranı 94.8'den 83.1'e düşer ve F1 6.5 puan azalır. Kontrol yüzeyi bunun nedenini gösterir: kural tablosu, bir kürenin içinde olsa bile self'e çok yakın duran örnekleri Normal sayar. Sistem bu haliyle temkinli bir dedektördür.
+2. FIS sürekli bir skor ürettiği için ROC/AUC hesaplanabilir; keskin karar ise tek bir ROC noktası verir. FIS'in AUC değeri keskin karardan yüksektir (96.7–98.5 ve 94.9). Ancak FIS'siz ham kapsama oranı da 98.5 AUC'ye ulaşır. Dolayısıyla sıralama kalitesindeki kazanç bulanık kurallardan değil, sürekli skordan gelir.
+3. Eşik eğitim verisinin %30'luk bir doğrulama kısmında ayarlandığında da F1 keskin karara yetişmez. Iris'te doğrulama kümesi yalnızca 7–8 normal örnek içerdiğinden seçilen eşik oynaktır.
+4. Gürültü altında keskin kararın F1 değeri 96.1'den 91.3'e düşerken bulanık katmanınki 89.6–90.1 aralığında sabit kalır. Yanlış alarm oranı bulanık katmanda her gürültü seviyesinde daha düşüktür.
+
+Sonuç olarak Iris üzerinde bulanık katman genel doğruluğu artırmamaktadır. Katkısı, yanlış alarm ile tespit arasında ayarlanabilir bir denge, gürültüye karşı daha kararlı bir davranış ve kural tablosuyla açıklanabilir bir karar sunmasıdır. Daha büyük IoT verisinde (BoT-IoT) bu durumun değişip değişmediği test edilecektir.
