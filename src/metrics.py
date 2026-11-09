@@ -1,15 +1,11 @@
-"""Performans ölçütleri.
-
-Pozitif sınıf = non-self (anomali, etiket 1).
-  DR  (Detection Rate) = TP / (TP + FN)   -- recall ile aynı
-  FAR (False Alarm Rate) = FP / (FP + TN)
-"""
+# Performans olculeri. Pozitif sinif = saldiri (1).
+# DR = TP / (TP + FN), FAR = FP / (FP + TN)
 from __future__ import annotations
 
 import numpy as np
 
 
-def confusion(y_true: np.ndarray, y_pred: np.ndarray) -> tuple[int, int, int, int]:
+def confusion(y_true, y_pred):
     y_true, y_pred = np.asarray(y_true, bool), np.asarray(y_pred, bool)
     tp = int(np.sum(y_true & y_pred))
     tn = int(np.sum(~y_true & ~y_pred))
@@ -18,7 +14,7 @@ def confusion(y_true: np.ndarray, y_pred: np.ndarray) -> tuple[int, int, int, in
     return tp, tn, fp, fn
 
 
-def evaluate(y_true: np.ndarray, y_pred: np.ndarray) -> dict[str, float]:
+def evaluate(y_true, y_pred):
     tp, tn, fp, fn = confusion(y_true, y_pred)
     dr = tp / (tp + fn) if tp + fn else 0.0
     far = fp / (fp + tn) if fp + tn else 0.0

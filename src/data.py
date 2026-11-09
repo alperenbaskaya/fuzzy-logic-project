@@ -1,13 +1,8 @@
-"""Veri yükleme ve ön işleme.
-
-Makale Bölüm 4'teki ön işleme adımları uygulanır:
-tekrar eden / eksik satırların silinmesi, kategorik özelliklerin LabelEncoder ile
-kodlanması ve min-max normalizasyonu ([0, 1] aralığı).
-
-Negatif seçim algoritmalarında örnekler iki gruba ayrılır:
-  self     -> normal trafik (etiket 0)
-  non-self -> saldırı / anomali (etiket 1)
-"""
+# Veri yukleme ve on isleme (makale Bolum 4).
+# - tekrar eden / eksik satirlari sil
+# - kategorikleri LabelEncoder ile sayiya cevir
+# - min-max ile [0, 1] araligina olcekle
+# Etiket: 0 = self (normal), 1 = non-self (saldiri)
 from __future__ import annotations
 
 from dataclasses import dataclass
@@ -23,20 +18,18 @@ RAW_DIR = Path(__file__).resolve().parents[1] / "data" / "raw"
 
 @dataclass
 class Dataset:
-    X: np.ndarray          # (n, d), [0, 1] aralığında
-    y: np.ndarray          # (n,), 0 = self (normal), 1 = non-self (anomali)
-    feature_names: list[str]
+    X: np.ndarray
+    y: np.ndarray
+    feature_names: list
     name: str
 
 
-def minmax(X: np.ndarray, eps: float = 1e-12) -> np.ndarray:
-    """Min-max normalizasyonu. eps sıfıra bölmeyi önler (makale Bölüm 4)."""
+def minmax(X, eps=1e-12):
     lo, hi = X.min(axis=0), X.max(axis=0)
     return (X - lo) / (hi - lo + eps)
 
 
-def clean_frame(df: pd.DataFrame) -> pd.DataFrame:
-    """Tekrar eden satırları, inf ve eksik değerleri temizler; kategorikleri kodlar."""
+def clean_frame(df):
     df = df.replace([np.inf, -np.inf], np.nan).dropna().drop_duplicates()
     for col in df.columns:
         if df[col].dtype == object:
@@ -44,23 +37,17 @@ def clean_frame(df: pd.DataFrame) -> pd.DataFrame:
     return df.reset_index(drop=True)
 
 
-def load_iris_self(self_class: int) -> Dataset:
-    """Iris: seçilen sınıf self, diğer iki sınıf non-self (makale Bölüm 4.3.1)."""
+def load_iris_self(self_class):
+    # secilen sinif self, diger ikisi saldiri gibi (makale 4.3.1)
     iris = load_iris()
     X = minmax(iris.data.astype(float))
     y = (iris.target != self_class).astype(int)
-    name = f"iris-{iris.target_names[self_class]}"
-    return Dataset(X, y, list(iris.feature_names), name)
+    return Dataset(X, y, list(iris.feature_names), f"iris-{iris.target_names[self_class]}")
 
 
-def load_skin(path: Path | None = None) -> Dataset:
-    """UCI Skin Segmentation: deri (sınıf 1) self, deri olmayan (sınıf 2) non-self.
-
-    Dosya biçimi: B G R etiket (sekme ayraçlı, başlıksız).
-    Not: makale yalnızca tekrarları silmekten bahseder; Skin setinde çok sayıda
-    tekrar eden piksel vardır. Varsayılan olarak tekrarlar silinmez, çünkü makalenin
-    raporladığı kayıt sayısı (245.057) ham dosyanın tamamıdır.
-    """
+def load_skin(path=None):
+    # UCI Skin Segmentation: B G R etiket. deri (1) = self, deri degil (2) = saldiri
+    # makale 245.057 kayit diyor yani tekrarlari silmemis, ben de silmiyorum
     path = path or RAW_DIR / "Skin_NonSkin.txt"
     df = pd.read_csv(path, sep=r"\s+", header=None, names=["B", "G", "R", "label"])
     X = minmax(df[["B", "G", "R"]].to_numpy(float))
@@ -68,28 +55,18 @@ def load_skin(path: Path | None = None) -> Dataset:
     return Dataset(X, y, ["B", "G", "R"], "skin")
 
 
-# Makale Tablo 3'te BoT-IoT için seçilen 6 özellik.
+# makale Tablo 3'teki BoT-IoT ozellikleri
 BOTIOT_PAPER_FEATURES = ["stime", "flgs", "sport", "dport", "seq", "spkts"]
-# Tanımlayıcı / zaman damgası niteliğindeki, veri sızıntısı riski taşıyan özellikler.
+# zaman damgasi / id / port gibi ozellikler -> veri sizintisi riski
 BOTIOT_LEAKY = ["pkSeqID", "stime", "ltime", "seq", "saddr", "daddr", "sport", "dport"]
 
 
-def load_botiot(
-    path: Path | None = None,
-    features: list[str] | None = None,
-    max_rows: int | None = 20000,
-    seed: int = 0,
-) -> Dataset:
-    """BoT-IoT CSV dosyalarını yükler.
-
-    `attack` sütunu 0/1 etikettir (0 = normal). BoT-IoT çok dengesizdir (normal
-    trafik %0.01 civarı); bu yüzden dengeli bir alt örneklem alınır.
-    features=None ise makalenin Tablo 3 listesi kullanılır.
-    """
+def load_botiot(path=None, features=None, max_rows=20000, seed=0):
+    # BoT-IoT cok dengesiz (normal trafik cok az), o yuzden dengeli alt orneklem aliyorum
     path = path or RAW_DIR / "botiot"
     files = sorted(Path(path).glob("*.csv")) if Path(path).is_dir() else [Path(path)]
     if not files:
-        raise FileNotFoundError(f"BoT-IoT CSV bulunamadı: {path}. data/README.md'ye bakın.")
+        raise FileNotFoundError(f"BoT-IoT CSV bulunamadi: {path} (data/README.md)")
     df = pd.concat([pd.read_csv(f, low_memory=False) for f in files], ignore_index=True)
     features = features or BOTIOT_PAPER_FEATURES
     df = clean_frame(df[features + ["attack"]])
@@ -108,18 +85,24 @@ def load_botiot(
     return Dataset(X, y, features, "bot-iot")
 
 
-def split_self_train(
-    ds: Dataset, train_frac: float, rng: np.random.Generator
-) -> tuple[np.ndarray, np.ndarray]:
-    """Eğitim için self ve non-self örneklerin `train_frac` kadarını rastgele seçer.
-
-    Döndürür: (self eğitim örnekleri, non-self eğitim örnekleri).
-    Test her zaman veri setinin tamamı üzerinde yapılır (makale Tablo 7 düzeni:
-    %100 eğitimde FAR = 0 olması, testin tüm veri üzerinde yapıldığını gösterir).
-    """
+def split_self_train(ds, train_frac, rng):
+    # self ve saldiri orneklerinin train_frac kadarini egitim icin sec
     out = []
     for label in (0, 1):
         idx = np.flatnonzero(ds.y == label)
         k = max(1, int(round(train_frac * len(idx))))
         out.append(ds.X[rng.permutation(idx)[:k]])
     return out[0], out[1]
+
+
+def split_train_test(ds, train_frac, rng):
+    # bulanik deneyler icin: egitimde kullanilmayan orneklerde test edecegim
+    tr_idx = []
+    for label in (0, 1):
+        idx = rng.permutation(np.flatnonzero(ds.y == label))
+        tr_idx.append(idx[: max(1, int(round(train_frac * len(idx))))])
+    tr = np.concatenate(tr_idx)
+    te = np.setdiff1d(np.arange(len(ds.y)), tr)
+    X_self = ds.X[tr][ds.y[tr] == 0]
+    X_non = ds.X[tr][ds.y[tr] == 1]
+    return X_self, X_non, ds.X[te], ds.y[te]

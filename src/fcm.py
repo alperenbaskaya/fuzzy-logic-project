@@ -1,18 +1,9 @@
-"""Fuzzy C-Means (FCM) kümeleme -- sıfırdan, kütüphanesiz.
-
-Makale Bölüm 3.2: self (normal) örnekler FCM ile kümelenir. Aday dedektör her self
-örnekle tek tek karşılaştırılmak yerine küme merkezi ve küme boyutuyla
-karşılaştırılır; böylece tolerans aşamasındaki uzaklık hesabı azalır.
-
-Notasyon (makale ile aynı):
-  X   : n x d self örnekleri
-  V   : c x d küme merkezleri
-  U   : n x c üyelik matrisi, u_ij in [0, 1], her satırın toplamı 1
-  m   : bulanıklık katsayısı (m > 1). m -> 1 iken FCM, K-means'e yaklaşır.
-
-Amaç fonksiyonu (Denk. 15):
-  J_m = sum_i sum_j u_ij^m * ||x_i - v_j||^2
-"""
+# Fuzzy C-Means (FCM) - makale Bolum 3.2, Denk. 15-19
+# Self (normal) ornekleri kumelemek icin kullaniyorum. Kutuphane kullanmadim,
+# formulleri makaleden direkt yazdim.
+#
+# X: n x d veri, V: c x d merkezler, U: n x c uyelik matrisi (satir toplami 1)
+# m: bulaniklik katsayisi (m > 1). m 1'e yaklastikca K-means gibi davranir.
 from __future__ import annotations
 
 from dataclasses import dataclass
@@ -23,55 +14,43 @@ from scipy.spatial.distance import cdist
 
 @dataclass
 class FCMResult:
-    centers: np.ndarray    # V, (c, d)
-    U: np.ndarray          # üyelik matrisi, (n, c)
-    J: float               # son amaç fonksiyonu değeri
+    centers: np.ndarray
+    U: np.ndarray
+    J: float
     n_iter: int
     m: float
 
     @property
-    def labels(self) -> np.ndarray:
-        """Her örneğin en yüksek üyelik derecesine sahip olduğu küme (defuzzify)."""
+    def labels(self):
+        # her ornegi en yuksek uyelige sahip oldugu kumeye ata
         return np.argmax(self.U, axis=1)
 
 
-def update_memberships(X: np.ndarray, V: np.ndarray, m: float) -> np.ndarray:
-    """Denk. 16: u_ij = 1 / sum_k ( ||x_i - v_j|| / ||x_i - v_k|| )^(2/(m-1))."""
-    D = np.fmax(cdist(X, V), 1e-12)                 # sıfıra bölmeyi önle
+def update_memberships(X, V, m):
+    # Denk. 16
+    D = np.fmax(cdist(X, V), 1e-12)   # sifira bolmesin
     ratio = (D[:, :, None] / D[:, None, :]) ** (2.0 / (m - 1.0))
     return 1.0 / ratio.sum(axis=2)
 
 
-def update_centers(X: np.ndarray, U: np.ndarray, m: float) -> np.ndarray:
-    """Denk. 17: v_j = sum_i u_ij^m x_i / sum_i u_ij^m."""
+def update_centers(X, U, m):
+    # Denk. 17
     Um = U ** m
     return (Um.T @ X) / Um.sum(axis=0)[:, None]
 
 
-def objective(X: np.ndarray, V: np.ndarray, U: np.ndarray, m: float) -> float:
-    """Denk. 15."""
+def objective(X, V, U, m):
+    # Denk. 15: J = sum u^m * ||x - v||^2
     return float(np.sum((U ** m) * cdist(X, V) ** 2))
 
 
-def fcm(
-    X: np.ndarray,
-    c: int,
-    m: float = 2.0,
-    eps: float = 1e-5,
-    max_iter: int = 300,
-    rng: np.random.Generator | None = None,
-) -> FCMResult:
-    """FCM algoritması (makale Bölüm 3.2, adım 1-4).
-
-    1) U rastgele başlatılır (satır toplamları 1).
-    2) Merkezler güncellenir (Denk. 17).
-    3) Üyelikler güncellenir (Denk. 16).
-    4) |J_{t+1} - J_t| < eps olunca durulur (Denk. 18).
-    """
+def fcm(X, c, m=2.0, eps=1e-5, max_iter=300, rng=None):
     if m <= 1.0:
-        raise ValueError("m > 1 olmalı")
+        raise ValueError("m > 1 olmali")
     rng = rng or np.random.default_rng()
     c = min(c, len(X))
+
+    # rastgele uyelik matrisiyle basla
     U = rng.random((len(X), c))
     U /= U.sum(axis=1, keepdims=True)
 
@@ -80,21 +59,15 @@ def fcm(
         V = update_centers(X, U, m)
         U = update_memberships(X, V, m)
         J = objective(X, V, U, m)
-        if abs(J_prev - J) < eps:
+        if abs(J_prev - J) < eps:      # Denk. 18 durma kosulu
             break
         J_prev = J
     return FCMResult(V, U, J, it, m)
 
 
-def com_sep_index(X: np.ndarray, res: FCMResult) -> float:
-    """Kümeleme kalite indeksi S = Com / Sep (Denk. 19). Küçük olan daha iyi.
-
-    Com: her kümenin üyelikle ağırlıklandırılmış iç-küme sıkılığı, küme
-         büyüklüğüyle (sum_i u_ij) normalize edilir.
-    Sep: küme merkezleri arasındaki ayrıklık.
-    Makale Denk. 19'u iki küme için yazar; burada c küme için genelleştirilir ve
-    Sep, merkezler arasındaki en küçük uzaklık olarak alınır (varsayım A3).
-    """
+def com_sep_index(X, res):
+    # Denk. 19: S = Com / Sep, kucuk olan daha iyi
+    # makale iki kume icin yazmis, ben c kumeye genellestirdim (ASSUMPTIONS A3)
     V, U, m = res.centers, res.U, res.m
     if len(V) < 2:
         return np.inf
@@ -105,13 +78,8 @@ def com_sep_index(X: np.ndarray, res: FCMResult) -> float:
     return com / max(sep, 1e-12)
 
 
-def select_fcm(
-    X: np.ndarray,
-    c_values=range(2, 11),
-    m_values=(1.5, 2.0, 2.3, 2.5, 3.0),
-    rng: np.random.Generator | None = None,
-) -> tuple[FCMResult, list[dict]]:
-    """Com/Sep indeksini en küçükleyen (c, m) çiftini ızgara aramasıyla seçer."""
+def select_fcm(X, c_values=range(2, 11), m_values=(1.5, 2.0, 2.3, 2.5, 3.0), rng=None):
+    # Com/Sep'i en kucuk yapan (c, m) ikilisini grid search ile bul
     rng = rng or np.random.default_rng()
     best, best_s, log = None, np.inf, []
     for c in c_values:
