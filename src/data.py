@@ -32,7 +32,7 @@ def minmax(X, eps=1e-12):
 def clean_frame(df):
     df = df.replace([np.inf, -np.inf], np.nan).dropna().drop_duplicates()
     for col in df.columns:
-        if df[col].dtype == object:
+        if not pd.api.types.is_numeric_dtype(df[col]):   # pandas 3'te metin tipi 'object' degil
             df[col] = LabelEncoder().fit_transform(df[col].astype(str))
     return df.reset_index(drop=True)
 
@@ -57,32 +57,45 @@ def load_skin(path=None):
 
 # makale Tablo 3'teki BoT-IoT ozellikleri
 BOTIOT_PAPER_FEATURES = ["stime", "flgs", "sport", "dport", "seq", "spkts"]
-# zaman damgasi / id / port gibi ozellikler -> veri sizintisi riski
-BOTIOT_LEAKY = ["pkSeqID", "stime", "ltime", "seq", "saddr", "daddr", "sport", "dport"]
+# veri setinin yazarlarinin "10 best" listesi, seq cikarildi (sira numarasi, sizinti riski)
+BOTIOT_CLEAN_FEATURES = ["stddev", "N_IN_Conn_P_SrcIP", "min", "state_number", "mean",
+                         "N_IN_Conn_P_DstIP", "drate", "srate", "max"]
+BOTIOT_SUBSET = RAW_DIR / "botiot_subset.csv"
 
 
-def load_botiot(path=None, features=None, max_rows=20000, seed=0):
-    # BoT-IoT cok dengesiz (normal trafik cok az), o yuzden dengeli alt orneklem aliyorum
-    path = path or RAW_DIR / "botiot"
-    files = sorted(Path(path).glob("*.csv")) if Path(path).is_dir() else [Path(path)]
+def build_botiot_subset(n_attack=5000, seed=0):
+    # %5'lik BoT-IoT'de 3.67 milyon akis var ama sadece 477'si normal.
+    # her seferinde 1 GB okumamak icin bir kere alt kume cikarip kaydediyorum:
+    # butun normaller + kategoriye gore orantili n_attack saldiri (Theft azsa hepsi)
+    files = sorted((RAW_DIR / "botiot").glob("*.csv"))
     if not files:
-        raise FileNotFoundError(f"BoT-IoT CSV bulunamadi: {path} (data/README.md)")
-    df = pd.concat([pd.read_csv(f, low_memory=False) for f in files], ignore_index=True)
-    features = features or BOTIOT_PAPER_FEATURES
-    df = clean_frame(df[features + ["attack"]])
+        raise FileNotFoundError("data/raw/botiot/*.csv yok (data/README.md)")
+    cols = sorted(set(BOTIOT_PAPER_FEATURES + BOTIOT_CLEAN_FEATURES)) + ["attack", "category"]
+    df = pd.concat([pd.read_csv(f, usecols=cols, low_memory=False) for f in files], ignore_index=True)
 
     rng = np.random.default_rng(seed)
-    if max_rows is not None:
-        normal = df[df["attack"] == 0]
-        attack = df[df["attack"] == 1]
-        k = min(len(normal), max_rows // 2)
-        normal = normal.iloc[rng.permutation(len(normal))[:k]]
-        attack = attack.iloc[rng.permutation(len(attack))[: max_rows - k]]
-        df = pd.concat([normal, attack], ignore_index=True)
+    normal = df[df["attack"] == 0]
+    attack = df[df["attack"] == 1]
+    share = attack["category"].value_counts(normalize=True)
+    parts = []
+    for cat, p in share.items():
+        pool = attack[attack["category"] == cat]
+        k = min(len(pool), max(50, int(round(p * n_attack))))
+        parts.append(pool.iloc[rng.permutation(len(pool))[:k]])
+    out = pd.concat([normal] + parts, ignore_index=True)
+    out.to_csv(BOTIOT_SUBSET, index=False)
+    return out
 
-    X = minmax(df[features].to_numpy(float))
+
+def load_botiot(features="clean"):
+    if not BOTIOT_SUBSET.exists():
+        build_botiot_subset()
+    df = pd.read_csv(BOTIOT_SUBSET, low_memory=False)
+    feats = BOTIOT_PAPER_FEATURES if features == "paper" else BOTIOT_CLEAN_FEATURES
+    df = clean_frame(df[feats + ["attack"]])
+    X = minmax(df[feats].to_numpy(float))
     y = df["attack"].to_numpy(int)
-    return Dataset(X, y, features, "bot-iot")
+    return Dataset(X, y, feats, f"bot-iot-{features}")
 
 
 def split_self_train(ds, train_frac, rng):
