@@ -15,6 +15,8 @@ from dataclasses import dataclass
 
 import numpy as np
 
+from sklearn.cluster import KMeans
+
 from .detectors import DetectorSet, SelfSpace
 from .fcm import fcm, select_fcm
 from .ga import ga_maximize
@@ -25,7 +27,7 @@ from .vdetector import TrainInfo
 @dataclass
 class NaIMConfig:
     r_self: float = 0.05
-    use_fcm: bool = True            # False -> FCM yok (ablasyon icin)
+    cluster: str = "fcm"            # "fcm", "kmeans" veya "none" (ablasyon icin)
     fcm_c: int | None = None        # None -> Com/Sep ile sec
     fcm_m: float = 2.3              # makale Sekil 4b
     boundary_q: float = 0.3
@@ -128,7 +130,7 @@ class NaIM:
         d = X_self.shape[1]
 
         # 1) self orneklerini FCM ile kumele
-        if cfg.use_fcm:
+        if cfg.cluster == "fcm":
             if cfg.fcm_c is None:
                 # m'yi de aratinca hep en buyuk m'yi seciyor (ASSUMPTIONS A3), o yuzden m sabit
                 c_max = max(2, min(10, len(X_self) // 3))
@@ -137,6 +139,11 @@ class NaIM:
             else:
                 self.fcm_res = fcm(X_self, cfg.fcm_c, cfg.fcm_m, rng=rng)
             self.ss = SelfSpace(X_self, self.fcm_res.centers, self.fcm_res.labels)
+        elif cfg.cluster == "kmeans":
+            # keskin kumeleme ile ayni budama, karsilastirma icin
+            km = KMeans(n_clusters=min(cfg.fcm_c or 5, len(X_self)), n_init=3,
+                        random_state=int(rng.integers(1 << 31))).fit(X_self)
+            self.ss = SelfSpace(X_self, km.cluster_centers_, km.labels_)
         else:
             self.ss = SelfSpace(X_self)
 
