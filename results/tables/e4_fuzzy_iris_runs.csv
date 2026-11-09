@@ -1,0 +1,481 @@
+self,run,method,DR,FAR,Accuracy,Precision,F1,AUC
+iris-setosa,0,Keskin (makale),96.0,0.0,97.33333333333334,100.0,97.95918367346938,98.0
+iris-setosa,0,Kapsama skoru (FIS yok),96.0,0.0,97.33333333333334,100.0,97.95918367346938,100.0
+iris-setosa,0,FIS ucgen mamdani centroid,100.0,0.0,100.0,100.0,100.0,100.0
+iris-setosa,0,FIS gauss mamdani centroid,100.0,0.0,100.0,100.0,100.0,100.0
+iris-setosa,0,FIS ucgen mamdani bisector,100.0,0.0,100.0,100.0,100.0,100.0
+iris-setosa,0,FIS ucgen mamdani mom,100.0,4.0,98.66666666666667,98.0392156862745,99.009900990099,100.0
+iris-setosa,0,FIS ucgen sugeno,100.0,0.0,100.0,100.0,100.0,100.0
+iris-setosa,0,FIS gauss sugeno,100.0,0.0,100.0,100.0,100.0,100.0
+iris-setosa,1,Keskin (makale),100.0,0.0,100.0,100.0,100.0,100.0
+iris-setosa,1,Kapsama skoru (FIS yok),100.0,0.0,100.0,100.0,100.0,100.0
+iris-setosa,1,FIS ucgen mamdani centroid,100.0,0.0,100.0,100.0,100.0,100.0
+iris-setosa,1,FIS gauss mamdani centroid,100.0,0.0,100.0,100.0,100.0,100.0
+iris-setosa,1,FIS ucgen mamdani bisector,100.0,0.0,100.0,100.0,100.0,100.0
+iris-setosa,1,FIS ucgen mamdani mom,100.0,0.0,100.0,100.0,100.0,100.0
+iris-setosa,1,FIS ucgen sugeno,100.0,0.0,100.0,100.0,100.0,100.0
+iris-setosa,1,FIS gauss sugeno,100.0,0.0,100.0,100.0,100.0,100.0
+iris-setosa,2,Keskin (makale),96.0,0.0,97.33333333333334,100.0,97.95918367346938,98.0
+iris-setosa,2,Kapsama skoru (FIS yok),96.0,0.0,97.33333333333334,100.0,97.95918367346938,99.68
+iris-setosa,2,FIS ucgen mamdani centroid,100.0,0.0,100.0,100.0,100.0,100.0
+iris-setosa,2,FIS gauss mamdani centroid,100.0,0.0,100.0,100.0,100.0,100.0
+iris-setosa,2,FIS ucgen mamdani bisector,100.0,0.0,100.0,100.0,100.0,100.0
+iris-setosa,2,FIS ucgen mamdani mom,100.0,4.0,98.66666666666667,98.0392156862745,99.009900990099,100.0
+iris-setosa,2,FIS ucgen sugeno,100.0,0.0,100.0,100.0,100.0,100.0
+iris-setosa,2,FIS gauss sugeno,100.0,0.0,100.0,100.0,100.0,100.0
+iris-setosa,3,Keskin (makale),100.0,0.0,100.0,100.0,100.0,100.0
+iris-setosa,3,Kapsama skoru (FIS yok),100.0,0.0,100.0,100.0,100.0,100.0
+iris-setosa,3,FIS ucgen mamdani centroid,100.0,0.0,100.0,100.0,100.0,100.0
+iris-setosa,3,FIS gauss mamdani centroid,100.0,0.0,100.0,100.0,100.0,100.0
+iris-setosa,3,FIS ucgen mamdani bisector,100.0,0.0,100.0,100.0,100.0,100.0
+iris-setosa,3,FIS ucgen mamdani mom,100.0,0.0,100.0,100.0,100.0,100.0
+iris-setosa,3,FIS ucgen sugeno,100.0,0.0,100.0,100.0,100.0,100.0
+iris-setosa,3,FIS gauss sugeno,100.0,0.0,100.0,100.0,100.0,100.0
+iris-setosa,4,Keskin (makale),100.0,0.0,100.0,100.0,100.0,100.0
+iris-setosa,4,Kapsama skoru (FIS yok),100.0,0.0,100.0,100.0,100.0,100.0
+iris-setosa,4,FIS ucgen mamdani centroid,100.0,0.0,100.0,100.0,100.0,100.0
+iris-setosa,4,FIS gauss mamdani centroid,100.0,0.0,100.0,100.0,100.0,100.0
+iris-setosa,4,FIS ucgen mamdani bisector,100.0,0.0,100.0,100.0,100.0,100.0
+iris-setosa,4,FIS ucgen mamdani mom,100.0,4.0,98.66666666666667,98.0392156862745,99.009900990099,99.88
+iris-setosa,4,FIS ucgen sugeno,100.0,0.0,100.0,100.0,100.0,100.0
+iris-setosa,4,FIS gauss sugeno,100.0,0.0,100.0,100.0,100.0,100.0
+iris-setosa,5,Keskin (makale),100.0,4.0,98.66666666666667,98.0392156862745,99.009900990099,98.0
+iris-setosa,5,Kapsama skoru (FIS yok),100.0,4.0,98.66666666666667,98.0392156862745,99.009900990099,100.0
+iris-setosa,5,FIS ucgen mamdani centroid,100.0,0.0,100.0,100.0,100.0,100.0
+iris-setosa,5,FIS gauss mamdani centroid,100.0,0.0,100.0,100.0,100.0,100.0
+iris-setosa,5,FIS ucgen mamdani bisector,100.0,0.0,100.0,100.0,100.0,100.0
+iris-setosa,5,FIS ucgen mamdani mom,100.0,4.0,98.66666666666667,98.0392156862745,99.009900990099,100.0
+iris-setosa,5,FIS ucgen sugeno,100.0,0.0,100.0,100.0,100.0,100.0
+iris-setosa,5,FIS gauss sugeno,100.0,0.0,100.0,100.0,100.0,100.0
+iris-setosa,6,Keskin (makale),100.0,0.0,100.0,100.0,100.0,100.0
+iris-setosa,6,Kapsama skoru (FIS yok),100.0,0.0,100.0,100.0,100.0,100.0
+iris-setosa,6,FIS ucgen mamdani centroid,100.0,0.0,100.0,100.0,100.0,100.0
+iris-setosa,6,FIS gauss mamdani centroid,100.0,0.0,100.0,100.0,100.0,100.0
+iris-setosa,6,FIS ucgen mamdani bisector,100.0,0.0,100.0,100.0,100.0,100.0
+iris-setosa,6,FIS ucgen mamdani mom,100.0,4.0,98.66666666666667,98.0392156862745,99.009900990099,100.0
+iris-setosa,6,FIS ucgen sugeno,100.0,0.0,100.0,100.0,100.0,100.0
+iris-setosa,6,FIS gauss sugeno,100.0,0.0,100.0,100.0,100.0,100.0
+iris-setosa,7,Keskin (makale),100.0,4.0,98.66666666666667,98.0392156862745,99.009900990099,98.0
+iris-setosa,7,Kapsama skoru (FIS yok),100.0,4.0,98.66666666666667,98.0392156862745,99.009900990099,100.0
+iris-setosa,7,FIS ucgen mamdani centroid,100.0,0.0,100.0,100.0,100.0,100.0
+iris-setosa,7,FIS gauss mamdani centroid,100.0,0.0,100.0,100.0,100.0,100.0
+iris-setosa,7,FIS ucgen mamdani bisector,100.0,0.0,100.0,100.0,100.0,100.0
+iris-setosa,7,FIS ucgen mamdani mom,100.0,0.0,100.0,100.0,100.0,100.0
+iris-setosa,7,FIS ucgen sugeno,100.0,0.0,100.0,100.0,100.0,100.0
+iris-setosa,7,FIS gauss sugeno,100.0,0.0,100.0,100.0,100.0,100.0
+iris-setosa,8,Keskin (makale),100.0,0.0,100.0,100.0,100.0,100.0
+iris-setosa,8,Kapsama skoru (FIS yok),100.0,0.0,100.0,100.0,100.0,100.0
+iris-setosa,8,FIS ucgen mamdani centroid,100.0,0.0,100.0,100.0,100.0,100.0
+iris-setosa,8,FIS gauss mamdani centroid,100.0,0.0,100.0,100.0,100.0,100.0
+iris-setosa,8,FIS ucgen mamdani bisector,100.0,0.0,100.0,100.0,100.0,99.99999999999999
+iris-setosa,8,FIS ucgen mamdani mom,100.0,0.0,100.0,100.0,100.0,100.0
+iris-setosa,8,FIS ucgen sugeno,100.0,0.0,100.0,100.0,100.0,100.0
+iris-setosa,8,FIS gauss sugeno,100.0,0.0,100.0,100.0,100.0,100.0
+iris-setosa,9,Keskin (makale),100.0,8.0,97.33333333333334,96.15384615384616,98.0392156862745,96.00000000000001
+iris-setosa,9,Kapsama skoru (FIS yok),100.0,8.0,97.33333333333334,96.15384615384616,98.0392156862745,100.0
+iris-setosa,9,FIS ucgen mamdani centroid,100.0,0.0,100.0,100.0,100.0,100.0
+iris-setosa,9,FIS gauss mamdani centroid,100.0,0.0,100.0,100.0,100.0,100.0
+iris-setosa,9,FIS ucgen mamdani bisector,100.0,0.0,100.0,100.0,100.0,100.0
+iris-setosa,9,FIS ucgen mamdani mom,100.0,0.0,100.0,100.0,100.0,100.0
+iris-setosa,9,FIS ucgen sugeno,100.0,0.0,100.0,100.0,100.0,100.0
+iris-setosa,9,FIS gauss sugeno,100.0,0.0,100.0,100.0,100.0,100.0
+iris-setosa,10,Keskin (makale),100.0,0.0,100.0,100.0,100.0,100.0
+iris-setosa,10,Kapsama skoru (FIS yok),100.0,0.0,100.0,100.0,100.0,100.0
+iris-setosa,10,FIS ucgen mamdani centroid,100.0,0.0,100.0,100.0,100.0,100.0
+iris-setosa,10,FIS gauss mamdani centroid,100.0,0.0,100.0,100.0,100.0,100.0
+iris-setosa,10,FIS ucgen mamdani bisector,100.0,0.0,100.0,100.0,100.0,100.0
+iris-setosa,10,FIS ucgen mamdani mom,100.0,0.0,100.0,100.0,100.0,100.0
+iris-setosa,10,FIS ucgen sugeno,100.0,0.0,100.0,100.0,100.0,100.0
+iris-setosa,10,FIS gauss sugeno,100.0,0.0,100.0,100.0,100.0,100.0
+iris-setosa,11,Keskin (makale),100.0,0.0,100.0,100.0,100.0,100.0
+iris-setosa,11,Kapsama skoru (FIS yok),100.0,0.0,100.0,100.0,100.0,100.0
+iris-setosa,11,FIS ucgen mamdani centroid,100.0,0.0,100.0,100.0,100.0,100.0
+iris-setosa,11,FIS gauss mamdani centroid,100.0,0.0,100.0,100.0,100.0,100.0
+iris-setosa,11,FIS ucgen mamdani bisector,100.0,0.0,100.0,100.0,100.0,100.0
+iris-setosa,11,FIS ucgen mamdani mom,100.0,0.0,100.0,100.0,100.0,100.0
+iris-setosa,11,FIS ucgen sugeno,100.0,0.0,100.0,100.0,100.0,100.0
+iris-setosa,11,FIS gauss sugeno,100.0,0.0,100.0,100.0,100.0,100.0
+iris-setosa,12,Keskin (makale),100.0,0.0,100.0,100.0,100.0,100.0
+iris-setosa,12,Kapsama skoru (FIS yok),100.0,0.0,100.0,100.0,100.0,100.0
+iris-setosa,12,FIS ucgen mamdani centroid,100.0,0.0,100.0,100.0,100.0,100.0
+iris-setosa,12,FIS gauss mamdani centroid,100.0,0.0,100.0,100.0,100.0,100.0
+iris-setosa,12,FIS ucgen mamdani bisector,100.0,0.0,100.0,100.0,100.0,100.0
+iris-setosa,12,FIS ucgen mamdani mom,100.0,4.0,98.66666666666667,98.0392156862745,99.009900990099,100.0
+iris-setosa,12,FIS ucgen sugeno,100.0,0.0,100.0,100.0,100.0,100.0
+iris-setosa,12,FIS gauss sugeno,100.0,0.0,100.0,100.0,100.0,100.0
+iris-setosa,13,Keskin (makale),100.0,0.0,100.0,100.0,100.0,100.0
+iris-setosa,13,Kapsama skoru (FIS yok),100.0,0.0,100.0,100.0,100.0,100.0
+iris-setosa,13,FIS ucgen mamdani centroid,100.0,0.0,100.0,100.0,100.0,100.0
+iris-setosa,13,FIS gauss mamdani centroid,100.0,0.0,100.0,100.0,100.0,100.0
+iris-setosa,13,FIS ucgen mamdani bisector,100.0,0.0,100.0,100.0,100.0,100.0
+iris-setosa,13,FIS ucgen mamdani mom,100.0,4.0,98.66666666666667,98.0392156862745,99.009900990099,100.0
+iris-setosa,13,FIS ucgen sugeno,100.0,0.0,100.0,100.0,100.0,100.0
+iris-setosa,13,FIS gauss sugeno,100.0,0.0,100.0,100.0,100.0,100.0
+iris-setosa,14,Keskin (makale),100.0,0.0,100.0,100.0,100.0,100.0
+iris-setosa,14,Kapsama skoru (FIS yok),100.0,0.0,100.0,100.0,100.0,100.0
+iris-setosa,14,FIS ucgen mamdani centroid,100.0,0.0,100.0,100.0,100.0,100.0
+iris-setosa,14,FIS gauss mamdani centroid,100.0,0.0,100.0,100.0,100.0,100.0
+iris-setosa,14,FIS ucgen mamdani bisector,100.0,0.0,100.0,100.0,100.0,100.0
+iris-setosa,14,FIS ucgen mamdani mom,100.0,0.0,100.0,100.0,100.0,100.0
+iris-setosa,14,FIS ucgen sugeno,100.0,0.0,100.0,100.0,100.0,100.0
+iris-setosa,14,FIS gauss sugeno,100.0,0.0,100.0,100.0,100.0,100.0
+iris-setosa,15,Keskin (makale),100.0,0.0,100.0,100.0,100.0,100.0
+iris-setosa,15,Kapsama skoru (FIS yok),100.0,0.0,100.0,100.0,100.0,100.0
+iris-setosa,15,FIS ucgen mamdani centroid,100.0,0.0,100.0,100.0,100.0,100.0
+iris-setosa,15,FIS gauss mamdani centroid,100.0,0.0,100.0,100.0,100.0,100.0
+iris-setosa,15,FIS ucgen mamdani bisector,100.0,0.0,100.0,100.0,100.0,100.0
+iris-setosa,15,FIS ucgen mamdani mom,100.0,0.0,100.0,100.0,100.0,100.0
+iris-setosa,15,FIS ucgen sugeno,100.0,0.0,100.0,100.0,100.0,100.0
+iris-setosa,15,FIS gauss sugeno,100.0,0.0,100.0,100.0,100.0,100.0
+iris-setosa,16,Keskin (makale),100.0,8.0,97.33333333333334,96.15384615384616,98.0392156862745,96.00000000000001
+iris-setosa,16,Kapsama skoru (FIS yok),100.0,8.0,97.33333333333334,96.15384615384616,98.0392156862745,100.0
+iris-setosa,16,FIS ucgen mamdani centroid,100.0,0.0,100.0,100.0,100.0,100.0
+iris-setosa,16,FIS gauss mamdani centroid,100.0,0.0,100.0,100.0,100.0,100.0
+iris-setosa,16,FIS ucgen mamdani bisector,100.0,0.0,100.0,100.0,100.0,100.0
+iris-setosa,16,FIS ucgen mamdani mom,100.0,0.0,100.0,100.0,100.0,100.0
+iris-setosa,16,FIS ucgen sugeno,100.0,0.0,100.0,100.0,100.0,100.0
+iris-setosa,16,FIS gauss sugeno,100.0,0.0,100.0,100.0,100.0,100.0
+iris-setosa,17,Keskin (makale),100.0,0.0,100.0,100.0,100.0,100.0
+iris-setosa,17,Kapsama skoru (FIS yok),100.0,0.0,100.0,100.0,100.0,100.0
+iris-setosa,17,FIS ucgen mamdani centroid,100.0,0.0,100.0,100.0,100.0,100.0
+iris-setosa,17,FIS gauss mamdani centroid,100.0,0.0,100.0,100.0,100.0,100.0
+iris-setosa,17,FIS ucgen mamdani bisector,100.0,0.0,100.0,100.0,100.0,100.0
+iris-setosa,17,FIS ucgen mamdani mom,100.0,0.0,100.0,100.0,100.0,100.0
+iris-setosa,17,FIS ucgen sugeno,100.0,0.0,100.0,100.0,100.0,100.0
+iris-setosa,17,FIS gauss sugeno,100.0,0.0,100.0,100.0,100.0,100.0
+iris-setosa,18,Keskin (makale),100.0,0.0,100.0,100.0,100.0,100.0
+iris-setosa,18,Kapsama skoru (FIS yok),100.0,0.0,100.0,100.0,100.0,100.0
+iris-setosa,18,FIS ucgen mamdani centroid,100.0,0.0,100.0,100.0,100.0,100.0
+iris-setosa,18,FIS gauss mamdani centroid,100.0,0.0,100.0,100.0,100.0,100.0
+iris-setosa,18,FIS ucgen mamdani bisector,100.0,0.0,100.0,100.0,100.0,100.0
+iris-setosa,18,FIS ucgen mamdani mom,100.0,0.0,100.0,100.0,100.0,100.0
+iris-setosa,18,FIS ucgen sugeno,100.0,0.0,100.0,100.0,100.0,100.0
+iris-setosa,18,FIS gauss sugeno,100.0,0.0,100.0,100.0,100.0,100.0
+iris-setosa,19,Keskin (makale),100.0,0.0,100.0,100.0,100.0,100.0
+iris-setosa,19,Kapsama skoru (FIS yok),100.0,0.0,100.0,100.0,100.0,100.0
+iris-setosa,19,FIS ucgen mamdani centroid,100.0,0.0,100.0,100.0,100.0,100.0
+iris-setosa,19,FIS gauss mamdani centroid,100.0,0.0,100.0,100.0,100.0,100.0
+iris-setosa,19,FIS ucgen mamdani bisector,100.0,0.0,100.0,100.0,100.0,100.0
+iris-setosa,19,FIS ucgen mamdani mom,100.0,0.0,100.0,100.0,100.0,100.0
+iris-setosa,19,FIS ucgen sugeno,100.0,0.0,100.0,100.0,100.0,100.0
+iris-setosa,19,FIS gauss sugeno,100.0,0.0,100.0,100.0,100.0,100.0
+iris-versicolor,0,Keskin (makale),84.0,8.0,86.66666666666667,95.45454545454545,89.36170212765958,87.99999999999999
+iris-versicolor,0,Kapsama skoru (FIS yok),84.0,8.0,86.66666666666667,95.45454545454545,89.36170212765958,97.04
+iris-versicolor,0,FIS ucgen mamdani centroid,76.0,0.0,84.0,100.0,86.36363636363636,95.92
+iris-versicolor,0,FIS gauss mamdani centroid,76.0,0.0,84.0,100.0,86.36363636363636,95.76
+iris-versicolor,0,FIS ucgen mamdani bisector,76.0,0.0,84.0,100.0,86.36363636363636,95.48
+iris-versicolor,0,FIS ucgen mamdani mom,76.0,4.0,82.66666666666667,97.43589743589743,85.3932584269663,94.52000000000001
+iris-versicolor,0,FIS ucgen sugeno,76.0,0.0,84.0,100.0,86.36363636363636,96.07999999999998
+iris-versicolor,0,FIS gauss sugeno,76.0,0.0,84.0,100.0,86.36363636363636,96.64
+iris-versicolor,1,Keskin (makale),90.0,4.0,92.0,97.82608695652173,93.75,93.0
+iris-versicolor,1,Kapsama skoru (FIS yok),90.0,4.0,92.0,97.82608695652173,93.75,97.35999999999999
+iris-versicolor,1,FIS ucgen mamdani centroid,70.0,0.0,80.0,100.0,82.35294117647058,97.83999999999999
+iris-versicolor,1,FIS gauss mamdani centroid,70.0,0.0,80.0,100.0,82.35294117647058,98.07999999999998
+iris-versicolor,1,FIS ucgen mamdani bisector,70.0,0.0,80.0,100.0,82.35294117647058,97.24
+iris-versicolor,1,FIS ucgen mamdani mom,82.0,0.0,88.0,100.0,90.10989010989012,96.32
+iris-versicolor,1,FIS ucgen sugeno,70.0,0.0,80.0,100.0,82.35294117647058,98.24
+iris-versicolor,1,FIS gauss sugeno,70.0,0.0,80.0,100.0,82.35294117647058,99.12
+iris-versicolor,2,Keskin (makale),98.0,4.0,97.33333333333334,98.0,98.0,96.99999999999999
+iris-versicolor,2,Kapsama skoru (FIS yok),98.0,4.0,97.33333333333334,98.0,98.0,99.68
+iris-versicolor,2,FIS ucgen mamdani centroid,90.0,0.0,93.33333333333333,100.0,94.73684210526316,99.6
+iris-versicolor,2,FIS gauss mamdani centroid,90.0,0.0,93.33333333333333,100.0,94.73684210526316,99.83999999999999
+iris-versicolor,2,FIS ucgen mamdani bisector,90.0,0.0,93.33333333333333,100.0,94.73684210526316,99.6
+iris-versicolor,2,FIS ucgen mamdani mom,98.0,4.0,97.33333333333334,98.0,98.0,99.4
+iris-versicolor,2,FIS ucgen sugeno,90.0,0.0,93.33333333333333,100.0,94.73684210526316,99.68
+iris-versicolor,2,FIS gauss sugeno,90.0,0.0,93.33333333333333,100.0,94.73684210526316,99.92
+iris-versicolor,3,Keskin (makale),94.0,12.0,92.0,94.0,94.0,91.0
+iris-versicolor,3,Kapsama skoru (FIS yok),94.0,12.0,92.0,94.0,94.0,97.2
+iris-versicolor,3,FIS ucgen mamdani centroid,84.0,0.0,89.33333333333333,100.0,91.30434782608697,95.84
+iris-versicolor,3,FIS gauss mamdani centroid,84.0,0.0,89.33333333333333,100.0,91.30434782608697,96.64
+iris-versicolor,3,FIS ucgen mamdani bisector,84.0,0.0,89.33333333333333,100.0,91.30434782608697,95.96000000000001
+iris-versicolor,3,FIS ucgen mamdani mom,88.0,0.0,92.0,100.0,93.61702127659575,95.72
+iris-versicolor,3,FIS ucgen sugeno,84.0,0.0,89.33333333333333,100.0,91.30434782608697,94.84
+iris-versicolor,3,FIS gauss sugeno,84.0,0.0,89.33333333333333,100.0,91.30434782608697,97.12
+iris-versicolor,4,Keskin (makale),94.0,8.0,93.33333333333333,95.91836734693877,94.94949494949495,93.0
+iris-versicolor,4,Kapsama skoru (FIS yok),94.0,8.0,93.33333333333333,95.91836734693877,94.94949494949495,99.11999999999999
+iris-versicolor,4,FIS ucgen mamdani centroid,84.0,0.0,89.33333333333333,100.0,91.30434782608697,97.11999999999999
+iris-versicolor,4,FIS gauss mamdani centroid,82.0,0.0,88.0,100.0,90.10989010989012,97.6
+iris-versicolor,4,FIS ucgen mamdani bisector,84.0,0.0,89.33333333333333,100.0,91.30434782608697,97.08000000000001
+iris-versicolor,4,FIS ucgen mamdani mom,90.0,4.0,92.0,97.82608695652173,93.75,96.0
+iris-versicolor,4,FIS ucgen sugeno,84.0,0.0,89.33333333333333,100.0,91.30434782608697,97.76
+iris-versicolor,4,FIS gauss sugeno,82.0,0.0,88.0,100.0,90.10989010989012,98.31999999999998
+iris-versicolor,5,Keskin (makale),90.0,4.0,92.0,97.82608695652173,93.75,93.0
+iris-versicolor,5,Kapsama skoru (FIS yok),90.0,4.0,92.0,97.82608695652173,93.75,97.44
+iris-versicolor,5,FIS ucgen mamdani centroid,82.0,0.0,88.0,100.0,90.10989010989012,96.08
+iris-versicolor,5,FIS gauss mamdani centroid,80.0,0.0,86.66666666666667,100.0,88.8888888888889,97.52
+iris-versicolor,5,FIS ucgen mamdani bisector,82.0,0.0,88.0,100.0,90.10989010989012,96.52000000000001
+iris-versicolor,5,FIS ucgen mamdani mom,90.0,0.0,93.33333333333333,100.0,94.73684210526316,96.44
+iris-versicolor,5,FIS ucgen sugeno,82.0,0.0,88.0,100.0,90.10989010989012,96.03999999999999
+iris-versicolor,5,FIS gauss sugeno,80.0,0.0,86.66666666666667,100.0,88.8888888888889,98.4
+iris-versicolor,6,Keskin (makale),80.0,4.0,85.33333333333334,97.5609756097561,87.91208791208791,88.0
+iris-versicolor,6,Kapsama skoru (FIS yok),80.0,4.0,85.33333333333334,97.5609756097561,87.91208791208791,94.96
+iris-versicolor,6,FIS ucgen mamdani centroid,74.0,0.0,82.66666666666667,100.0,85.0574712643678,99.68
+iris-versicolor,6,FIS gauss mamdani centroid,72.0,0.0,81.33333333333333,100.0,83.72093023255813,99.68
+iris-versicolor,6,FIS ucgen mamdani bisector,74.0,0.0,82.66666666666667,100.0,85.0574712643678,99.68
+iris-versicolor,6,FIS ucgen mamdani mom,82.0,0.0,88.0,100.0,90.10989010989012,99.64
+iris-versicolor,6,FIS ucgen sugeno,74.0,0.0,82.66666666666667,100.0,85.0574712643678,99.68
+iris-versicolor,6,FIS gauss sugeno,72.0,0.0,81.33333333333333,100.0,83.72093023255813,99.6
+iris-versicolor,7,Keskin (makale),90.0,4.0,92.0,97.82608695652173,93.75,93.0
+iris-versicolor,7,Kapsama skoru (FIS yok),90.0,4.0,92.0,97.82608695652173,93.75,96.96000000000001
+iris-versicolor,7,FIS ucgen mamdani centroid,72.0,0.0,81.33333333333333,100.0,83.72093023255813,96.8
+iris-versicolor,7,FIS gauss mamdani centroid,68.0,0.0,78.66666666666666,100.0,80.95238095238095,97.03999999999999
+iris-versicolor,7,FIS ucgen mamdani bisector,72.0,0.0,81.33333333333333,100.0,83.72093023255813,96.67999999999999
+iris-versicolor,7,FIS ucgen mamdani mom,78.0,8.0,82.66666666666667,95.1219512195122,85.71428571428571,96.04
+iris-versicolor,7,FIS ucgen sugeno,72.0,0.0,81.33333333333333,100.0,83.72093023255813,96.2
+iris-versicolor,7,FIS gauss sugeno,68.0,0.0,78.66666666666666,100.0,80.95238095238095,97.44
+iris-versicolor,8,Keskin (makale),98.0,12.0,94.66666666666667,94.23076923076923,96.07843137254902,93.0
+iris-versicolor,8,Kapsama skoru (FIS yok),98.0,12.0,94.66666666666667,94.23076923076923,96.07843137254902,97.28
+iris-versicolor,8,FIS ucgen mamdani centroid,88.0,0.0,92.0,100.0,93.61702127659575,98.64
+iris-versicolor,8,FIS gauss mamdani centroid,88.0,0.0,92.0,100.0,93.61702127659575,98.8
+iris-versicolor,8,FIS ucgen mamdani bisector,88.0,0.0,92.0,100.0,93.61702127659575,98.6
+iris-versicolor,8,FIS ucgen mamdani mom,94.0,8.0,93.33333333333333,95.91836734693877,94.94949494949495,97.75999999999999
+iris-versicolor,8,FIS ucgen sugeno,88.0,0.0,92.0,100.0,93.61702127659575,98.64
+iris-versicolor,8,FIS gauss sugeno,88.0,0.0,92.0,100.0,93.61702127659575,99.2
+iris-versicolor,9,Keskin (makale),96.0,0.0,97.33333333333334,100.0,97.95918367346938,98.0
+iris-versicolor,9,Kapsama skoru (FIS yok),96.0,0.0,97.33333333333334,100.0,97.95918367346938,98.4
+iris-versicolor,9,FIS ucgen mamdani centroid,84.0,0.0,89.33333333333333,100.0,91.30434782608697,99.03999999999999
+iris-versicolor,9,FIS gauss mamdani centroid,86.0,0.0,90.66666666666666,100.0,92.4731182795699,98.96
+iris-versicolor,9,FIS ucgen mamdani bisector,86.0,0.0,90.66666666666666,100.0,92.4731182795699,98.68
+iris-versicolor,9,FIS ucgen mamdani mom,90.0,0.0,93.33333333333333,100.0,94.73684210526316,97.52
+iris-versicolor,9,FIS ucgen sugeno,86.0,0.0,90.66666666666666,100.0,92.4731182795699,99.2
+iris-versicolor,9,FIS gauss sugeno,86.0,0.0,90.66666666666666,100.0,92.4731182795699,99.44
+iris-versicolor,10,Keskin (makale),94.0,0.0,96.0,100.0,96.90721649484536,97.0
+iris-versicolor,10,Kapsama skoru (FIS yok),94.0,0.0,96.0,100.0,96.90721649484536,97.68
+iris-versicolor,10,FIS ucgen mamdani centroid,72.0,0.0,81.33333333333333,100.0,83.72093023255813,95.52000000000001
+iris-versicolor,10,FIS gauss mamdani centroid,70.0,0.0,80.0,100.0,82.35294117647058,96.39999999999999
+iris-versicolor,10,FIS ucgen mamdani bisector,72.0,4.0,80.0,97.2972972972973,82.75862068965519,95.0
+iris-versicolor,10,FIS ucgen mamdani mom,86.0,8.0,88.0,95.55555555555556,90.52631578947368,93.96
+iris-versicolor,10,FIS ucgen sugeno,72.0,0.0,81.33333333333333,100.0,83.72093023255813,95.52000000000001
+iris-versicolor,10,FIS gauss sugeno,74.0,0.0,82.66666666666667,100.0,85.0574712643678,96.96000000000001
+iris-versicolor,11,Keskin (makale),86.0,4.0,89.33333333333333,97.72727272727273,91.48936170212765,90.99999999999999
+iris-versicolor,11,Kapsama skoru (FIS yok),86.0,4.0,89.33333333333333,97.72727272727273,91.48936170212765,94.32
+iris-versicolor,11,FIS ucgen mamdani centroid,70.0,0.0,80.0,100.0,82.35294117647058,96.24
+iris-versicolor,11,FIS gauss mamdani centroid,70.0,0.0,80.0,100.0,82.35294117647058,97.28
+iris-versicolor,11,FIS ucgen mamdani bisector,70.0,0.0,80.0,100.0,82.35294117647058,96.83999999999999
+iris-versicolor,11,FIS ucgen mamdani mom,78.0,0.0,85.33333333333334,100.0,87.64044943820225,95.60000000000001
+iris-versicolor,11,FIS ucgen sugeno,70.0,0.0,80.0,100.0,82.35294117647058,96.64
+iris-versicolor,11,FIS gauss sugeno,70.0,0.0,80.0,100.0,82.35294117647058,98.64
+iris-versicolor,12,Keskin (makale),100.0,8.0,97.33333333333334,96.15384615384616,98.0392156862745,96.00000000000001
+iris-versicolor,12,Kapsama skoru (FIS yok),100.0,8.0,97.33333333333334,96.15384615384616,98.0392156862745,98.8
+iris-versicolor,12,FIS ucgen mamdani centroid,86.0,4.0,89.33333333333333,97.72727272727273,91.48936170212765,98.72
+iris-versicolor,12,FIS gauss mamdani centroid,90.0,4.0,92.0,97.82608695652173,93.75,98.96000000000001
+iris-versicolor,12,FIS ucgen mamdani bisector,90.0,4.0,92.0,97.82608695652173,93.75,98.71999999999998
+iris-versicolor,12,FIS ucgen mamdani mom,98.0,4.0,97.33333333333334,98.0,98.0,98.64
+iris-versicolor,12,FIS ucgen sugeno,90.0,4.0,92.0,97.82608695652173,93.75,98.96000000000001
+iris-versicolor,12,FIS gauss sugeno,90.0,4.0,92.0,97.82608695652173,93.75,99.2
+iris-versicolor,13,Keskin (makale),88.0,24.0,84.0,88.0,88.0,82.0
+iris-versicolor,13,Kapsama skoru (FIS yok),88.0,24.0,84.0,88.0,88.0,90.64
+iris-versicolor,13,FIS ucgen mamdani centroid,84.0,0.0,89.33333333333333,100.0,91.30434782608697,99.68
+iris-versicolor,13,FIS gauss mamdani centroid,80.0,0.0,86.66666666666667,100.0,88.8888888888889,99.6
+iris-versicolor,13,FIS ucgen mamdani bisector,86.0,0.0,90.66666666666666,100.0,92.4731182795699,99.68
+iris-versicolor,13,FIS ucgen mamdani mom,94.0,0.0,96.0,100.0,96.90721649484536,99.68
+iris-versicolor,13,FIS ucgen sugeno,86.0,0.0,90.66666666666666,100.0,92.4731182795699,99.67999999999999
+iris-versicolor,13,FIS gauss sugeno,82.0,0.0,88.0,100.0,90.10989010989012,99.76
+iris-versicolor,14,Keskin (makale),90.0,0.0,93.33333333333333,100.0,94.73684210526316,95.0
+iris-versicolor,14,Kapsama skoru (FIS yok),90.0,0.0,93.33333333333333,100.0,94.73684210526316,96.64
+iris-versicolor,14,FIS ucgen mamdani centroid,86.0,0.0,90.66666666666666,100.0,92.4731182795699,98.48
+iris-versicolor,14,FIS gauss mamdani centroid,86.0,0.0,90.66666666666666,100.0,92.4731182795699,98.64
+iris-versicolor,14,FIS ucgen mamdani bisector,88.0,0.0,92.0,100.0,93.61702127659575,98.44
+iris-versicolor,14,FIS ucgen mamdani mom,92.0,4.0,93.33333333333333,97.87234042553192,94.84536082474226,98.24
+iris-versicolor,14,FIS ucgen sugeno,86.0,0.0,90.66666666666666,100.0,92.4731182795699,97.92
+iris-versicolor,14,FIS gauss sugeno,86.0,0.0,90.66666666666666,100.0,92.4731182795699,98.72
+iris-versicolor,15,Keskin (makale),92.0,4.0,93.33333333333333,97.87234042553192,94.84536082474226,94.0
+iris-versicolor,15,Kapsama skoru (FIS yok),92.0,4.0,93.33333333333333,97.87234042553192,94.84536082474226,98.56
+iris-versicolor,15,FIS ucgen mamdani centroid,80.0,0.0,86.66666666666667,100.0,88.8888888888889,96.96000000000001
+iris-versicolor,15,FIS gauss mamdani centroid,80.0,0.0,86.66666666666667,100.0,88.8888888888889,97.12
+iris-versicolor,15,FIS ucgen mamdani bisector,82.0,0.0,88.0,100.0,90.10989010989012,96.75999999999999
+iris-versicolor,15,FIS ucgen mamdani mom,82.0,4.0,86.66666666666667,97.61904761904762,89.13043478260869,96.44
+iris-versicolor,15,FIS ucgen sugeno,80.0,0.0,86.66666666666667,100.0,88.8888888888889,96.52
+iris-versicolor,15,FIS gauss sugeno,80.0,0.0,86.66666666666667,100.0,88.8888888888889,97.83999999999999
+iris-versicolor,16,Keskin (makale),92.0,0.0,94.66666666666667,100.0,95.83333333333334,96.0
+iris-versicolor,16,Kapsama skoru (FIS yok),92.0,0.0,94.66666666666667,100.0,95.83333333333334,96.80000000000001
+iris-versicolor,16,FIS ucgen mamdani centroid,86.0,0.0,90.66666666666666,100.0,92.4731182795699,95.44
+iris-versicolor,16,FIS gauss mamdani centroid,86.0,0.0,90.66666666666666,100.0,92.4731182795699,96.8
+iris-versicolor,16,FIS ucgen mamdani bisector,86.0,0.0,90.66666666666666,100.0,92.4731182795699,95.8
+iris-versicolor,16,FIS ucgen mamdani mom,92.0,0.0,94.66666666666667,100.0,95.83333333333334,94.8
+iris-versicolor,16,FIS ucgen sugeno,86.0,0.0,90.66666666666666,100.0,92.4731182795699,97.63999999999999
+iris-versicolor,16,FIS gauss sugeno,86.0,0.0,90.66666666666666,100.0,92.4731182795699,97.76
+iris-versicolor,17,Keskin (makale),98.0,4.0,97.33333333333334,98.0,98.0,96.99999999999999
+iris-versicolor,17,Kapsama skoru (FIS yok),98.0,4.0,97.33333333333334,98.0,98.0,99.6
+iris-versicolor,17,FIS ucgen mamdani centroid,86.0,0.0,90.66666666666666,100.0,92.4731182795699,99.52
+iris-versicolor,17,FIS gauss mamdani centroid,88.0,0.0,92.0,100.0,93.61702127659575,99.76
+iris-versicolor,17,FIS ucgen mamdani bisector,88.0,0.0,92.0,100.0,93.61702127659575,99.55999999999999
+iris-versicolor,17,FIS ucgen mamdani mom,96.0,0.0,97.33333333333334,100.0,97.95918367346938,99.11999999999999
+iris-versicolor,17,FIS ucgen sugeno,88.0,0.0,92.0,100.0,93.61702127659575,99.52
+iris-versicolor,17,FIS gauss sugeno,90.0,0.0,93.33333333333333,100.0,94.73684210526316,99.76
+iris-versicolor,18,Keskin (makale),84.0,4.0,88.0,97.67441860465115,90.32258064516128,89.99999999999999
+iris-versicolor,18,Kapsama skoru (FIS yok),84.0,4.0,88.0,97.67441860465115,90.32258064516128,96.39999999999999
+iris-versicolor,18,FIS ucgen mamdani centroid,82.0,0.0,88.0,100.0,90.10989010989012,97.84
+iris-versicolor,18,FIS gauss mamdani centroid,78.0,0.0,85.33333333333334,100.0,87.64044943820225,97.76
+iris-versicolor,18,FIS ucgen mamdani bisector,82.0,0.0,88.0,100.0,90.10989010989012,97.48
+iris-versicolor,18,FIS ucgen mamdani mom,90.0,4.0,92.0,97.82608695652173,93.75,96.00000000000001
+iris-versicolor,18,FIS ucgen sugeno,82.0,0.0,88.0,100.0,90.10989010989012,98.0
+iris-versicolor,18,FIS gauss sugeno,82.0,0.0,88.0,100.0,90.10989010989012,98.32
+iris-versicolor,19,Keskin (makale),96.0,12.0,93.33333333333333,94.11764705882352,95.04950495049505,92.0
+iris-versicolor,19,Kapsama skoru (FIS yok),96.0,12.0,93.33333333333333,94.11764705882352,95.04950495049505,98.96000000000001
+iris-versicolor,19,FIS ucgen mamdani centroid,82.0,0.0,88.0,100.0,90.10989010989012,99.6
+iris-versicolor,19,FIS gauss mamdani centroid,84.0,0.0,89.33333333333333,100.0,91.30434782608697,99.6
+iris-versicolor,19,FIS ucgen mamdani bisector,86.0,0.0,90.66666666666666,100.0,92.4731182795699,99.6
+iris-versicolor,19,FIS ucgen mamdani mom,90.0,0.0,93.33333333333333,100.0,94.73684210526316,99.6
+iris-versicolor,19,FIS ucgen sugeno,84.0,0.0,89.33333333333333,100.0,91.30434782608697,99.75999999999999
+iris-versicolor,19,FIS gauss sugeno,84.0,0.0,89.33333333333333,100.0,91.30434782608697,100.0
+iris-virginica,0,Keskin (makale),98.0,16.0,93.33333333333333,92.45283018867924,95.14563106796116,91.0
+iris-virginica,0,Kapsama skoru (FIS yok),98.0,16.0,93.33333333333333,92.45283018867924,95.14563106796116,99.2
+iris-virginica,0,FIS ucgen mamdani centroid,66.0,0.0,77.33333333333333,100.0,79.51807228915662,91.67999999999999
+iris-virginica,0,FIS gauss mamdani centroid,66.0,0.0,77.33333333333333,100.0,79.51807228915662,93.19999999999999
+iris-virginica,0,FIS ucgen mamdani bisector,66.0,0.0,77.33333333333333,100.0,79.51807228915662,89.88000000000001
+iris-virginica,0,FIS ucgen mamdani mom,66.0,0.0,77.33333333333333,100.0,79.51807228915662,85.04
+iris-virginica,0,FIS ucgen sugeno,66.0,0.0,77.33333333333333,100.0,79.51807228915662,93.8
+iris-virginica,0,FIS gauss sugeno,66.0,0.0,77.33333333333333,100.0,79.51807228915662,97.6
+iris-virginica,1,Keskin (makale),92.0,8.0,92.0,95.83333333333334,93.87755102040816,92.0
+iris-virginica,1,Kapsama skoru (FIS yok),92.0,8.0,92.0,95.83333333333334,93.87755102040816,99.03999999999999
+iris-virginica,1,FIS ucgen mamdani centroid,92.0,4.0,93.33333333333333,97.87234042553192,94.84536082474226,97.6
+iris-virginica,1,FIS gauss mamdani centroid,86.0,0.0,90.66666666666666,100.0,92.4731182795699,97.36
+iris-virginica,1,FIS ucgen mamdani bisector,92.0,4.0,93.33333333333333,97.87234042553192,94.84536082474226,97.39999999999999
+iris-virginica,1,FIS ucgen mamdani mom,96.0,28.000000000000004,88.0,87.27272727272727,91.42857142857143,94.07999999999998
+iris-virginica,1,FIS ucgen sugeno,92.0,4.0,93.33333333333333,97.87234042553192,94.84536082474226,97.96000000000001
+iris-virginica,1,FIS gauss sugeno,88.0,0.0,92.0,100.0,93.61702127659575,97.83999999999999
+iris-virginica,2,Keskin (makale),100.0,8.0,97.33333333333334,96.15384615384616,98.0392156862745,96.00000000000001
+iris-virginica,2,Kapsama skoru (FIS yok),100.0,8.0,97.33333333333334,96.15384615384616,98.0392156862745,96.47999999999999
+iris-virginica,2,FIS ucgen mamdani centroid,54.0,4.0,68.0,96.42857142857143,69.23076923076923,89.44000000000001
+iris-virginica,2,FIS gauss mamdani centroid,54.0,4.0,68.0,96.42857142857143,69.23076923076923,90.32
+iris-virginica,2,FIS ucgen mamdani bisector,54.0,4.0,68.0,96.42857142857143,69.23076923076923,87.92000000000002
+iris-virginica,2,FIS ucgen mamdani mom,57.99999999999999,4.0,70.66666666666667,96.66666666666667,72.5,75.6
+iris-virginica,2,FIS ucgen sugeno,54.0,4.0,68.0,96.42857142857143,69.23076923076923,92.56
+iris-virginica,2,FIS gauss sugeno,54.0,4.0,68.0,96.42857142857143,69.23076923076923,96.16
+iris-virginica,3,Keskin (makale),88.0,4.0,90.66666666666666,97.77777777777777,92.63157894736842,91.99999999999999
+iris-virginica,3,Kapsama skoru (FIS yok),88.0,4.0,90.66666666666666,97.77777777777777,92.63157894736842,99.2
+iris-virginica,3,FIS ucgen mamdani centroid,57.99999999999999,0.0,72.0,100.0,73.41772151898734,88.56
+iris-virginica,3,FIS gauss mamdani centroid,57.99999999999999,0.0,72.0,100.0,73.41772151898734,87.92
+iris-virginica,3,FIS ucgen mamdani bisector,57.99999999999999,0.0,72.0,100.0,73.41772151898734,86.84
+iris-virginica,3,FIS ucgen mamdani mom,74.0,8.0,80.0,94.87179487179486,83.14606741573033,80.16000000000001
+iris-virginica,3,FIS ucgen sugeno,57.99999999999999,0.0,72.0,100.0,73.41772151898734,92.91999999999999
+iris-virginica,3,FIS gauss sugeno,57.99999999999999,0.0,72.0,100.0,73.41772151898734,94.0
+iris-virginica,4,Keskin (makale),92.0,16.0,89.33333333333333,92.0,92.0,87.99999999999999
+iris-virginica,4,Kapsama skoru (FIS yok),92.0,16.0,89.33333333333333,92.0,92.0,96.0
+iris-virginica,4,FIS ucgen mamdani centroid,64.0,4.0,74.66666666666667,96.96969696969697,77.10843373493975,92.88000000000001
+iris-virginica,4,FIS gauss mamdani centroid,64.0,4.0,74.66666666666667,96.96969696969697,77.10843373493975,93.76
+iris-virginica,4,FIS ucgen mamdani bisector,66.0,4.0,76.0,97.05882352941177,78.57142857142857,92.92
+iris-virginica,4,FIS ucgen mamdani mom,70.0,4.0,78.66666666666666,97.22222222222221,81.3953488372093,89.36
+iris-virginica,4,FIS ucgen sugeno,64.0,4.0,74.66666666666667,96.96969696969697,77.10843373493975,94.39999999999999
+iris-virginica,4,FIS gauss sugeno,64.0,4.0,74.66666666666667,96.96969696969697,77.10843373493975,95.67999999999999
+iris-virginica,5,Keskin (makale),94.0,16.0,90.66666666666666,92.15686274509804,93.06930693069307,89.0
+iris-virginica,5,Kapsama skoru (FIS yok),94.0,16.0,90.66666666666666,92.15686274509804,93.06930693069307,97.60000000000001
+iris-virginica,5,FIS ucgen mamdani centroid,96.0,4.0,96.0,97.95918367346938,96.96969696969697,98.88
+iris-virginica,5,FIS gauss mamdani centroid,92.0,4.0,93.33333333333333,97.87234042553192,94.84536082474226,98.8
+iris-virginica,5,FIS ucgen mamdani bisector,96.0,4.0,96.0,97.95918367346938,96.96969696969697,98.8
+iris-virginica,5,FIS ucgen mamdani mom,100.0,32.0,89.33333333333333,86.20689655172413,92.5925925925926,96.28
+iris-virginica,5,FIS ucgen sugeno,96.0,4.0,96.0,97.95918367346938,96.96969696969697,98.96
+iris-virginica,5,FIS gauss sugeno,92.0,4.0,93.33333333333333,97.87234042553192,94.84536082474226,99.04
+iris-virginica,6,Keskin (makale),90.0,4.0,92.0,97.82608695652173,93.75,93.0
+iris-virginica,6,Kapsama skoru (FIS yok),90.0,4.0,92.0,97.82608695652173,93.75,98.96000000000001
+iris-virginica,6,FIS ucgen mamdani centroid,64.0,0.0,76.0,100.0,78.04878048780488,90.56
+iris-virginica,6,FIS gauss mamdani centroid,64.0,0.0,76.0,100.0,78.04878048780488,89.36
+iris-virginica,6,FIS ucgen mamdani bisector,64.0,0.0,76.0,100.0,78.04878048780488,89.00000000000001
+iris-virginica,6,FIS ucgen mamdani mom,74.0,4.0,81.33333333333333,97.36842105263158,84.0909090909091,80.91999999999999
+iris-virginica,6,FIS ucgen sugeno,64.0,0.0,76.0,100.0,78.04878048780488,93.67999999999998
+iris-virginica,6,FIS gauss sugeno,64.0,0.0,76.0,100.0,78.04878048780488,94.32000000000001
+iris-virginica,7,Keskin (makale),88.0,0.0,92.0,100.0,93.61702127659575,94.0
+iris-virginica,7,Kapsama skoru (FIS yok),88.0,0.0,92.0,100.0,93.61702127659575,99.83999999999999
+iris-virginica,7,FIS ucgen mamdani centroid,50.0,0.0,66.66666666666666,100.0,66.66666666666666,88.84
+iris-virginica,7,FIS gauss mamdani centroid,50.0,0.0,66.66666666666666,100.0,66.66666666666666,88.63999999999999
+iris-virginica,7,FIS ucgen mamdani bisector,50.0,0.0,66.66666666666666,100.0,66.66666666666666,84.2
+iris-virginica,7,FIS ucgen mamdani mom,56.00000000000001,0.0,70.66666666666667,100.0,71.7948717948718,67.11999999999999
+iris-virginica,7,FIS ucgen sugeno,50.0,0.0,66.66666666666666,100.0,66.66666666666666,94.8
+iris-virginica,7,FIS gauss sugeno,50.0,0.0,66.66666666666666,100.0,66.66666666666666,97.44
+iris-virginica,8,Keskin (makale),98.0,4.0,97.33333333333334,98.0,98.0,96.99999999999999
+iris-virginica,8,Kapsama skoru (FIS yok),98.0,4.0,97.33333333333334,98.0,98.0,98.8
+iris-virginica,8,FIS ucgen mamdani centroid,80.0,0.0,86.66666666666667,100.0,88.8888888888889,95.19999999999999
+iris-virginica,8,FIS gauss mamdani centroid,76.0,0.0,84.0,100.0,86.36363636363636,95.44
+iris-virginica,8,FIS ucgen mamdani bisector,80.0,0.0,86.66666666666667,100.0,88.8888888888889,95.12
+iris-virginica,8,FIS ucgen mamdani mom,96.0,32.0,86.66666666666667,85.71428571428571,90.56603773584904,93.67999999999999
+iris-virginica,8,FIS ucgen sugeno,80.0,0.0,86.66666666666667,100.0,88.8888888888889,95.75999999999999
+iris-virginica,8,FIS gauss sugeno,78.0,0.0,85.33333333333334,100.0,87.64044943820225,97.28
+iris-virginica,9,Keskin (makale),92.0,4.0,93.33333333333333,97.87234042553192,94.84536082474226,94.0
+iris-virginica,9,Kapsama skoru (FIS yok),92.0,4.0,93.33333333333333,97.87234042553192,94.84536082474226,99.52
+iris-virginica,9,FIS ucgen mamdani centroid,44.0,0.0,62.66666666666667,100.0,61.111111111111114,87.44
+iris-virginica,9,FIS gauss mamdani centroid,44.0,0.0,62.66666666666667,100.0,61.111111111111114,89.84
+iris-virginica,9,FIS ucgen mamdani bisector,44.0,0.0,62.66666666666667,100.0,61.111111111111114,87.2
+iris-virginica,9,FIS ucgen mamdani mom,57.99999999999999,4.0,70.66666666666667,96.66666666666667,72.5,81.08
+iris-virginica,9,FIS ucgen sugeno,44.0,0.0,62.66666666666667,100.0,61.111111111111114,91.91999999999999
+iris-virginica,9,FIS gauss sugeno,44.0,0.0,62.66666666666667,100.0,61.111111111111114,96.24000000000001
+iris-virginica,10,Keskin (makale),92.0,8.0,92.0,95.83333333333334,93.87755102040816,92.0
+iris-virginica,10,Kapsama skoru (FIS yok),92.0,8.0,92.0,95.83333333333334,93.87755102040816,97.6
+iris-virginica,10,FIS ucgen mamdani centroid,68.0,0.0,78.66666666666666,100.0,80.95238095238095,92.96
+iris-virginica,10,FIS gauss mamdani centroid,68.0,0.0,78.66666666666666,100.0,80.95238095238095,91.6
+iris-virginica,10,FIS ucgen mamdani bisector,68.0,0.0,78.66666666666666,100.0,80.95238095238095,91.92
+iris-virginica,10,FIS ucgen mamdani mom,82.0,4.0,86.66666666666667,97.61904761904762,89.13043478260869,88.44
+iris-virginica,10,FIS ucgen sugeno,68.0,0.0,78.66666666666666,100.0,80.95238095238095,93.88
+iris-virginica,10,FIS gauss sugeno,68.0,0.0,78.66666666666666,100.0,80.95238095238095,94.48
+iris-virginica,11,Keskin (makale),94.0,8.0,93.33333333333333,95.91836734693877,94.94949494949495,93.0
+iris-virginica,11,Kapsama skoru (FIS yok),94.0,8.0,93.33333333333333,95.91836734693877,94.94949494949495,97.76
+iris-virginica,11,FIS ucgen mamdani centroid,54.0,0.0,69.33333333333334,100.0,70.12987012987013,85.28
+iris-virginica,11,FIS gauss mamdani centroid,54.0,0.0,69.33333333333334,100.0,70.12987012987013,86.88
+iris-virginica,11,FIS ucgen mamdani bisector,54.0,0.0,69.33333333333334,100.0,70.12987012987013,81.96
+iris-virginica,11,FIS ucgen mamdani mom,56.00000000000001,0.0,70.66666666666667,100.0,71.7948717948718,69.84
+iris-virginica,11,FIS ucgen sugeno,54.0,0.0,69.33333333333334,100.0,70.12987012987013,90.88
+iris-virginica,11,FIS gauss sugeno,54.0,0.0,69.33333333333334,100.0,70.12987012987013,95.84
+iris-virginica,12,Keskin (makale),98.0,16.0,93.33333333333333,92.45283018867924,95.14563106796116,91.0
+iris-virginica,12,Kapsama skoru (FIS yok),98.0,16.0,93.33333333333333,92.45283018867924,95.14563106796116,96.72
+iris-virginica,12,FIS ucgen mamdani centroid,98.0,20.0,92.0,90.74074074074075,94.23076923076924,97.68
+iris-virginica,12,FIS gauss mamdani centroid,96.0,12.0,93.33333333333333,94.11764705882352,95.04950495049505,97.92
+iris-virginica,12,FIS ucgen mamdani bisector,98.0,28.000000000000004,89.33333333333333,87.5,92.45283018867923,97.52
+iris-virginica,12,FIS ucgen mamdani mom,100.0,60.0,80.0,76.92307692307693,86.95652173913044,94.76
+iris-virginica,12,FIS ucgen sugeno,98.0,20.0,92.0,90.74074074074075,94.23076923076924,97.68
+iris-virginica,12,FIS gauss sugeno,96.0,12.0,93.33333333333333,94.11764705882352,95.04950495049505,98.56
+iris-virginica,13,Keskin (makale),92.0,12.0,90.66666666666666,93.87755102040816,92.92929292929293,90.0
+iris-virginica,13,Kapsama skoru (FIS yok),92.0,12.0,90.66666666666666,93.87755102040816,92.92929292929293,96.72
+iris-virginica,13,FIS ucgen mamdani centroid,60.0,4.0,72.0,96.7741935483871,74.07407407407408,88.64000000000001
+iris-virginica,13,FIS gauss mamdani centroid,60.0,4.0,72.0,96.7741935483871,74.07407407407408,88.8
+iris-virginica,13,FIS ucgen mamdani bisector,60.0,4.0,72.0,96.7741935483871,74.07407407407408,86.24
+iris-virginica,13,FIS ucgen mamdani mom,68.0,4.0,77.33333333333333,97.14285714285714,80.0,76.91999999999999
+iris-virginica,13,FIS ucgen sugeno,60.0,4.0,72.0,96.7741935483871,74.07407407407408,92.0
+iris-virginica,13,FIS gauss sugeno,62.0,4.0,73.33333333333333,96.875,75.60975609756096,95.35999999999999
+iris-virginica,14,Keskin (makale),92.0,4.0,93.33333333333333,97.87234042553192,94.84536082474226,94.0
+iris-virginica,14,Kapsama skoru (FIS yok),92.0,4.0,93.33333333333333,97.87234042553192,94.84536082474226,99.11999999999999
+iris-virginica,14,FIS ucgen mamdani centroid,68.0,0.0,78.66666666666666,100.0,80.95238095238095,95.91999999999999
+iris-virginica,14,FIS gauss mamdani centroid,68.0,0.0,78.66666666666666,100.0,80.95238095238095,95.04000000000002
+iris-virginica,14,FIS ucgen mamdani bisector,68.0,0.0,78.66666666666666,100.0,80.95238095238095,95.19999999999999
+iris-virginica,14,FIS ucgen mamdani mom,76.0,4.0,82.66666666666667,97.43589743589743,85.3932584269663,87.92
+iris-virginica,14,FIS ucgen sugeno,68.0,0.0,78.66666666666666,100.0,80.95238095238095,97.32
+iris-virginica,14,FIS gauss sugeno,68.0,0.0,78.66666666666666,100.0,80.95238095238095,96.96000000000001
+iris-virginica,15,Keskin (makale),96.0,4.0,96.0,97.95918367346938,96.96969696969697,96.0
+iris-virginica,15,Kapsama skoru (FIS yok),96.0,4.0,96.0,97.95918367346938,96.96969696969697,99.44
+iris-virginica,15,FIS ucgen mamdani centroid,92.0,4.0,93.33333333333333,97.87234042553192,94.84536082474226,97.12
+iris-virginica,15,FIS gauss mamdani centroid,92.0,4.0,93.33333333333333,97.87234042553192,94.84536082474226,97.2
+iris-virginica,15,FIS ucgen mamdani bisector,92.0,4.0,93.33333333333333,97.87234042553192,94.84536082474226,97.2
+iris-virginica,15,FIS ucgen mamdani mom,96.0,36.0,85.33333333333334,84.21052631578947,89.71962616822428,94.36
+iris-virginica,15,FIS ucgen sugeno,92.0,4.0,93.33333333333333,97.87234042553192,94.84536082474226,97.52
+iris-virginica,15,FIS gauss sugeno,92.0,4.0,93.33333333333333,97.87234042553192,94.84536082474226,98.16
+iris-virginica,16,Keskin (makale),82.0,0.0,88.0,100.0,90.10989010989012,90.99999999999999
+iris-virginica,16,Kapsama skoru (FIS yok),82.0,0.0,88.0,100.0,90.10989010989012,99.52000000000001
+iris-virginica,16,FIS ucgen mamdani centroid,56.00000000000001,0.0,70.66666666666667,100.0,71.7948717948718,86.64
+iris-virginica,16,FIS gauss mamdani centroid,56.00000000000001,0.0,70.66666666666667,100.0,71.7948717948718,89.92
+iris-virginica,16,FIS ucgen mamdani bisector,56.00000000000001,0.0,70.66666666666667,100.0,71.7948717948718,85.92
+iris-virginica,16,FIS ucgen mamdani mom,64.0,0.0,76.0,100.0,78.04878048780488,80.39999999999999
+iris-virginica,16,FIS ucgen sugeno,56.00000000000001,0.0,70.66666666666667,100.0,71.7948717948718,90.19999999999999
+iris-virginica,16,FIS gauss sugeno,56.00000000000001,0.0,70.66666666666667,100.0,71.7948717948718,95.76
+iris-virginica,17,Keskin (makale),98.0,8.0,96.0,96.07843137254902,97.02970297029701,95.0
+iris-virginica,17,Kapsama skoru (FIS yok),98.0,8.0,96.0,96.07843137254902,97.02970297029701,98.96000000000001
+iris-virginica,17,FIS ucgen mamdani centroid,60.0,0.0,73.33333333333333,100.0,74.99999999999999,93.36000000000001
+iris-virginica,17,FIS gauss mamdani centroid,62.0,0.0,74.66666666666667,100.0,76.5432098765432,94.39999999999999
+iris-virginica,17,FIS ucgen mamdani bisector,62.0,0.0,74.66666666666667,100.0,76.5432098765432,90.75999999999999
+iris-virginica,17,FIS ucgen mamdani mom,70.0,0.0,80.0,100.0,82.35294117647058,85.63999999999999
+iris-virginica,17,FIS ucgen sugeno,60.0,0.0,73.33333333333333,100.0,74.99999999999999,95.67999999999999
+iris-virginica,17,FIS gauss sugeno,62.0,0.0,74.66666666666667,100.0,76.5432098765432,98.72000000000001
+iris-virginica,18,Keskin (makale),96.0,4.0,96.0,97.95918367346938,96.96969696969697,96.0
+iris-virginica,18,Kapsama skoru (FIS yok),96.0,4.0,96.0,97.95918367346938,96.96969696969697,98.56
+iris-virginica,18,FIS ucgen mamdani centroid,88.0,4.0,90.66666666666666,97.77777777777777,92.63157894736842,98.68
+iris-virginica,18,FIS gauss mamdani centroid,88.0,0.0,92.0,100.0,93.61702127659575,99.44
+iris-virginica,18,FIS ucgen mamdani bisector,92.0,4.0,93.33333333333333,97.87234042553192,94.84536082474226,98.84
+iris-virginica,18,FIS ucgen mamdani mom,100.0,12.0,96.0,94.33962264150944,97.0873786407767,97.60000000000001
+iris-virginica,18,FIS ucgen sugeno,90.0,4.0,92.0,97.82608695652173,93.75,98.92
+iris-virginica,18,FIS gauss sugeno,88.0,0.0,92.0,100.0,93.61702127659575,99.52
+iris-virginica,19,Keskin (makale),92.0,12.0,90.66666666666666,93.87755102040816,92.92929292929293,90.0
+iris-virginica,19,Kapsama skoru (FIS yok),92.0,12.0,90.66666666666666,93.87755102040816,92.92929292929293,98.08000000000001
+iris-virginica,19,FIS ucgen mamdani centroid,54.0,0.0,69.33333333333334,100.0,70.12987012987013,87.76
+iris-virginica,19,FIS gauss mamdani centroid,52.0,0.0,68.0,100.0,68.42105263157895,91.03999999999999
+iris-virginica,19,FIS ucgen mamdani bisector,54.0,0.0,69.33333333333334,100.0,70.12987012987013,87.32
+iris-virginica,19,FIS ucgen mamdani mom,62.0,0.0,74.66666666666667,100.0,76.5432098765432,82.8
+iris-virginica,19,FIS ucgen sugeno,54.0,0.0,69.33333333333334,100.0,70.12987012987013,91.19999999999999
+iris-virginica,19,FIS gauss sugeno,52.0,0.0,68.0,100.0,68.42105263157895,96.0

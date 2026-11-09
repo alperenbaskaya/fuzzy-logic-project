@@ -1,0 +1,241 @@
+self,run,method,DR,FAR,Accuracy,Precision,F1,esik
+iris-setosa,0,Keskin (makale),100.0,0.0,100.0,100.0,100.0,
+iris-setosa,0,Kapsama skoru + ayarli esik,94.0,0.0,96.0,100.0,96.90721649484536,
+iris-setosa,0,FIS ucgen mamdani centroid + ayarli esik,86.0,0.0,90.66666666666666,100.0,92.4731182795699,0.8244836940936491
+iris-setosa,0,FIS ucgen sugeno + ayarli esik,100.0,0.0,100.0,100.0,100.0,1.0
+iris-setosa,1,Keskin (makale),100.0,0.0,100.0,100.0,100.0,
+iris-setosa,1,Kapsama skoru + ayarli esik,100.0,0.0,100.0,100.0,100.0,
+iris-setosa,1,FIS ucgen mamdani centroid + ayarli esik,96.0,0.0,97.33333333333334,100.0,97.95918367346938,0.8226319245725686
+iris-setosa,1,FIS ucgen sugeno + ayarli esik,100.0,0.0,100.0,100.0,100.0,1.0
+iris-setosa,2,Keskin (makale),100.0,0.0,100.0,100.0,100.0,
+iris-setosa,2,Kapsama skoru + ayarli esik,88.0,0.0,92.0,100.0,93.61702127659575,
+iris-setosa,2,FIS ucgen mamdani centroid + ayarli esik,100.0,0.0,100.0,100.0,100.0,0.8204630394583288
+iris-setosa,2,FIS ucgen sugeno + ayarli esik,100.0,0.0,100.0,100.0,100.0,1.0
+iris-setosa,3,Keskin (makale),100.0,0.0,100.0,100.0,100.0,
+iris-setosa,3,Kapsama skoru + ayarli esik,98.0,0.0,98.66666666666667,100.0,98.98989898989899,
+iris-setosa,3,FIS ucgen mamdani centroid + ayarli esik,98.0,0.0,98.66666666666667,100.0,98.98989898989899,0.822764054020184
+iris-setosa,3,FIS ucgen sugeno + ayarli esik,100.0,0.0,100.0,100.0,100.0,1.0
+iris-setosa,4,Keskin (makale),100.0,0.0,100.0,100.0,100.0,
+iris-setosa,4,Kapsama skoru + ayarli esik,86.0,0.0,90.66666666666666,100.0,92.4731182795699,
+iris-setosa,4,FIS ucgen mamdani centroid + ayarli esik,100.0,0.0,100.0,100.0,100.0,0.8201878516389423
+iris-setosa,4,FIS ucgen sugeno + ayarli esik,100.0,0.0,100.0,100.0,100.0,1.0
+iris-setosa,5,Keskin (makale),100.0,0.0,100.0,100.0,100.0,
+iris-setosa,5,Kapsama skoru + ayarli esik,100.0,0.0,100.0,100.0,100.0,
+iris-setosa,5,FIS ucgen mamdani centroid + ayarli esik,100.0,0.0,100.0,100.0,100.0,0.81939256128625
+iris-setosa,5,FIS ucgen sugeno + ayarli esik,100.0,0.0,100.0,100.0,100.0,1.0
+iris-setosa,6,Keskin (makale),100.0,0.0,100.0,100.0,100.0,
+iris-setosa,6,Kapsama skoru + ayarli esik,98.0,0.0,98.66666666666667,100.0,98.98989898989899,
+iris-setosa,6,FIS ucgen mamdani centroid + ayarli esik,98.0,0.0,98.66666666666667,100.0,98.98989898989899,0.8214131847975635
+iris-setosa,6,FIS ucgen sugeno + ayarli esik,100.0,0.0,100.0,100.0,100.0,1.0
+iris-setosa,7,Keskin (makale),100.0,0.0,100.0,100.0,100.0,
+iris-setosa,7,Kapsama skoru + ayarli esik,98.0,0.0,98.66666666666667,100.0,98.98989898989899,
+iris-setosa,7,FIS ucgen mamdani centroid + ayarli esik,96.0,0.0,97.33333333333334,100.0,97.95918367346938,0.821875583707977
+iris-setosa,7,FIS ucgen sugeno + ayarli esik,100.0,0.0,100.0,100.0,100.0,1.0
+iris-setosa,8,Keskin (makale),100.0,0.0,100.0,100.0,100.0,
+iris-setosa,8,Kapsama skoru + ayarli esik,100.0,0.0,100.0,100.0,100.0,
+iris-setosa,8,FIS ucgen mamdani centroid + ayarli esik,100.0,0.0,100.0,100.0,100.0,0.8199820517496956
+iris-setosa,8,FIS ucgen sugeno + ayarli esik,100.0,0.0,100.0,100.0,100.0,1.0
+iris-setosa,9,Keskin (makale),100.0,0.0,100.0,100.0,100.0,
+iris-setosa,9,Kapsama skoru + ayarli esik,94.0,0.0,96.0,100.0,96.90721649484536,
+iris-setosa,9,FIS ucgen mamdani centroid + ayarli esik,92.0,0.0,94.66666666666667,100.0,95.83333333333334,0.82356482121219
+iris-setosa,9,FIS ucgen sugeno + ayarli esik,100.0,0.0,100.0,100.0,100.0,1.0
+iris-setosa,10,Keskin (makale),100.0,0.0,100.0,100.0,100.0,
+iris-setosa,10,Kapsama skoru + ayarli esik,100.0,0.0,100.0,100.0,100.0,
+iris-setosa,10,FIS ucgen mamdani centroid + ayarli esik,100.0,0.0,100.0,100.0,100.0,0.8215077068743986
+iris-setosa,10,FIS ucgen sugeno + ayarli esik,100.0,0.0,100.0,100.0,100.0,1.0
+iris-setosa,11,Keskin (makale),100.0,0.0,100.0,100.0,100.0,
+iris-setosa,11,Kapsama skoru + ayarli esik,98.0,0.0,98.66666666666667,100.0,98.98989898989899,
+iris-setosa,11,FIS ucgen mamdani centroid + ayarli esik,98.0,0.0,98.66666666666667,100.0,98.98989898989899,0.8201686684813638
+iris-setosa,11,FIS ucgen sugeno + ayarli esik,100.0,0.0,100.0,100.0,100.0,1.0
+iris-setosa,12,Keskin (makale),100.0,0.0,100.0,100.0,100.0,
+iris-setosa,12,Kapsama skoru + ayarli esik,100.0,0.0,100.0,100.0,100.0,
+iris-setosa,12,FIS ucgen mamdani centroid + ayarli esik,86.0,0.0,90.66666666666666,100.0,92.4731182795699,0.828475893831544
+iris-setosa,12,FIS ucgen sugeno + ayarli esik,100.0,0.0,100.0,100.0,100.0,1.0
+iris-setosa,13,Keskin (makale),100.0,0.0,100.0,100.0,100.0,
+iris-setosa,13,Kapsama skoru + ayarli esik,90.0,0.0,93.33333333333333,100.0,94.73684210526316,
+iris-setosa,13,FIS ucgen mamdani centroid + ayarli esik,98.0,0.0,98.66666666666667,100.0,98.98989898989899,0.8196102086811805
+iris-setosa,13,FIS ucgen sugeno + ayarli esik,100.0,0.0,100.0,100.0,100.0,1.0
+iris-setosa,14,Keskin (makale),100.0,0.0,100.0,100.0,100.0,
+iris-setosa,14,Kapsama skoru + ayarli esik,80.0,0.0,86.66666666666667,100.0,88.8888888888889,
+iris-setosa,14,FIS ucgen mamdani centroid + ayarli esik,96.0,0.0,97.33333333333334,100.0,97.95918367346938,0.8204073961273738
+iris-setosa,14,FIS ucgen sugeno + ayarli esik,100.0,0.0,100.0,100.0,100.0,1.0
+iris-setosa,15,Keskin (makale),100.0,4.0,98.66666666666667,98.0392156862745,99.009900990099,
+iris-setosa,15,Kapsama skoru + ayarli esik,90.0,0.0,93.33333333333333,100.0,94.73684210526316,
+iris-setosa,15,FIS ucgen mamdani centroid + ayarli esik,92.0,0.0,94.66666666666667,100.0,95.83333333333334,0.8245213432599319
+iris-setosa,15,FIS ucgen sugeno + ayarli esik,98.0,0.0,98.66666666666667,100.0,98.98989898989899,1.0
+iris-setosa,16,Keskin (makale),100.0,4.0,98.66666666666667,98.0392156862745,99.009900990099,
+iris-setosa,16,Kapsama skoru + ayarli esik,100.0,0.0,100.0,100.0,100.0,
+iris-setosa,16,FIS ucgen mamdani centroid + ayarli esik,100.0,0.0,100.0,100.0,100.0,0.820321821212757
+iris-setosa,16,FIS ucgen sugeno + ayarli esik,100.0,0.0,100.0,100.0,100.0,1.0
+iris-setosa,17,Keskin (makale),100.0,16.0,94.66666666666667,92.5925925925926,96.15384615384615,
+iris-setosa,17,Kapsama skoru + ayarli esik,86.0,0.0,90.66666666666666,100.0,92.4731182795699,
+iris-setosa,17,FIS ucgen mamdani centroid + ayarli esik,82.0,0.0,88.0,100.0,90.10989010989012,0.8282373733575964
+iris-setosa,17,FIS ucgen sugeno + ayarli esik,100.0,0.0,100.0,100.0,100.0,1.0
+iris-setosa,18,Keskin (makale),100.0,0.0,100.0,100.0,100.0,
+iris-setosa,18,Kapsama skoru + ayarli esik,90.0,0.0,93.33333333333333,100.0,94.73684210526316,
+iris-setosa,18,FIS ucgen mamdani centroid + ayarli esik,100.0,0.0,100.0,100.0,100.0,0.8196060723763681
+iris-setosa,18,FIS ucgen sugeno + ayarli esik,100.0,0.0,100.0,100.0,100.0,1.0
+iris-setosa,19,Keskin (makale),100.0,4.0,98.66666666666667,98.0392156862745,99.009900990099,
+iris-setosa,19,Kapsama skoru + ayarli esik,88.0,0.0,92.0,100.0,93.61702127659575,
+iris-setosa,19,FIS ucgen mamdani centroid + ayarli esik,96.0,0.0,97.33333333333334,100.0,97.95918367346938,0.8209740482256446
+iris-setosa,19,FIS ucgen sugeno + ayarli esik,98.0,0.0,98.66666666666667,100.0,98.98989898989899,1.0
+iris-versicolor,0,Keskin (makale),92.0,8.0,92.0,95.83333333333334,93.87755102040816,
+iris-versicolor,0,Kapsama skoru + ayarli esik,94.0,8.0,93.33333333333333,95.91836734693877,94.94949494949495,
+iris-versicolor,0,FIS ucgen mamdani centroid + ayarli esik,94.0,0.0,96.0,100.0,96.90721649484536,0.3147957891930821
+iris-versicolor,0,FIS ucgen sugeno + ayarli esik,94.0,0.0,96.0,100.0,96.90721649484536,0.16192464877642293
+iris-versicolor,1,Keskin (makale),94.0,4.0,94.66666666666667,97.91666666666666,95.91836734693877,
+iris-versicolor,1,Kapsama skoru + ayarli esik,84.0,0.0,89.33333333333333,100.0,91.30434782608697,
+iris-versicolor,1,FIS ucgen mamdani centroid + ayarli esik,88.0,0.0,92.0,100.0,93.61702127659575,0.3956894841222029
+iris-versicolor,1,FIS ucgen sugeno + ayarli esik,88.0,0.0,92.0,100.0,93.61702127659575,0.281102675816452
+iris-versicolor,2,Keskin (makale),94.0,4.0,94.66666666666667,97.91666666666666,95.91836734693877,
+iris-versicolor,2,Kapsama skoru + ayarli esik,98.0,8.0,96.0,96.07843137254902,97.02970297029701,
+iris-versicolor,2,FIS ucgen mamdani centroid + ayarli esik,88.0,0.0,92.0,100.0,93.61702127659575,0.40438609713562707
+iris-versicolor,2,FIS ucgen sugeno + ayarli esik,88.0,0.0,92.0,100.0,93.61702127659575,0.29609831343910226
+iris-versicolor,3,Keskin (makale),68.0,0.0,78.66666666666666,100.0,80.95238095238095,
+iris-versicolor,3,Kapsama skoru + ayarli esik,78.0,4.0,84.0,97.5,86.66666666666667,
+iris-versicolor,3,FIS ucgen mamdani centroid + ayarli esik,100.0,28.000000000000004,90.66666666666666,87.71929824561403,93.45794392523364,0.19056491865257397
+iris-versicolor,3,FIS ucgen sugeno + ayarli esik,100.0,28.000000000000004,90.66666666666666,87.71929824561403,93.45794392523364,0.03399847739759396
+iris-versicolor,4,Keskin (makale),98.0,20.0,92.0,90.74074074074075,94.23076923076924,
+iris-versicolor,4,Kapsama skoru + ayarli esik,96.0,20.0,90.66666666666666,90.56603773584906,93.20388349514563,
+iris-versicolor,4,FIS ucgen mamdani centroid + ayarli esik,94.0,16.0,90.66666666666666,92.15686274509804,93.06930693069307,0.4701096306377591
+iris-versicolor,4,FIS ucgen sugeno + ayarli esik,94.0,16.0,90.66666666666666,92.15686274509804,93.06930693069307,0.42750993457201053
+iris-versicolor,5,Keskin (makale),92.0,4.0,93.33333333333333,97.87234042553192,94.84536082474226,
+iris-versicolor,5,Kapsama skoru + ayarli esik,94.0,4.0,94.66666666666667,97.91666666666666,95.91836734693877,
+iris-versicolor,5,FIS ucgen mamdani centroid + ayarli esik,86.0,4.0,89.33333333333333,97.72727272727273,91.48936170212765,0.3592290867394481
+iris-versicolor,5,FIS ucgen sugeno + ayarli esik,88.0,4.0,90.66666666666666,97.77777777777777,92.63157894736842,0.2229677200355466
+iris-versicolor,6,Keskin (makale),94.0,16.0,90.66666666666666,92.15686274509804,93.06930693069307,
+iris-versicolor,6,Kapsama skoru + ayarli esik,94.0,8.0,93.33333333333333,95.91836734693877,94.94949494949495,
+iris-versicolor,6,FIS ucgen mamdani centroid + ayarli esik,96.0,20.0,90.66666666666666,90.56603773584906,93.20388349514563,0.49616314670275286
+iris-versicolor,6,FIS ucgen sugeno + ayarli esik,96.0,20.0,90.66666666666666,90.56603773584906,93.20388349514563,0.4901922687879475
+iris-versicolor,7,Keskin (makale),86.0,8.0,88.0,95.55555555555556,90.52631578947368,
+iris-versicolor,7,Kapsama skoru + ayarli esik,90.0,12.0,89.33333333333333,93.75,91.83673469387756,
+iris-versicolor,7,FIS ucgen mamdani centroid + ayarli esik,94.0,28.000000000000004,86.66666666666667,87.03703703703704,90.38461538461539,0.43925946973869623
+iris-versicolor,7,FIS ucgen sugeno + ayarli esik,94.0,32.0,85.33333333333334,85.45454545454545,89.52380952380952,0.3615214813947847
+iris-versicolor,8,Keskin (makale),98.0,0.0,98.66666666666667,100.0,98.98989898989899,
+iris-versicolor,8,Kapsama skoru + ayarli esik,94.0,0.0,96.0,100.0,96.90721649484536,
+iris-versicolor,8,FIS ucgen mamdani centroid + ayarli esik,96.0,8.0,94.66666666666667,96.0,96.0,0.28587680580471636
+iris-versicolor,8,FIS ucgen sugeno + ayarli esik,96.0,8.0,94.66666666666667,96.0,96.0,0.1271916692779049
+iris-versicolor,9,Keskin (makale),94.0,0.0,96.0,100.0,96.90721649484536,
+iris-versicolor,9,Kapsama skoru + ayarli esik,90.0,0.0,93.33333333333333,100.0,94.73684210526316,
+iris-versicolor,9,FIS ucgen mamdani centroid + ayarli esik,90.0,16.0,88.0,91.83673469387756,90.9090909090909,0.3205609790502315
+iris-versicolor,9,FIS ucgen sugeno + ayarli esik,90.0,12.0,89.33333333333333,93.75,91.83673469387756,0.1786839284237455
+iris-versicolor,10,Keskin (makale),98.0,12.0,94.66666666666667,94.23076923076923,96.07843137254902,
+iris-versicolor,10,Kapsama skoru + ayarli esik,100.0,12.0,96.0,94.33962264150944,97.0873786407767,
+iris-versicolor,10,FIS ucgen mamdani centroid + ayarli esik,96.0,4.0,96.0,97.95918367346938,96.96969696969697,0.3798842714872617
+iris-versicolor,10,FIS ucgen sugeno + ayarli esik,96.0,4.0,96.0,97.95918367346938,96.96969696969697,0.2550685908203454
+iris-versicolor,11,Keskin (makale),98.0,16.0,93.33333333333333,92.45283018867924,95.14563106796116,
+iris-versicolor,11,Kapsama skoru + ayarli esik,96.0,12.0,93.33333333333333,94.11764705882352,95.04950495049505,
+iris-versicolor,11,FIS ucgen mamdani centroid + ayarli esik,84.0,0.0,89.33333333333333,100.0,91.30434782608697,0.5
+iris-versicolor,11,FIS ucgen sugeno + ayarli esik,86.0,0.0,90.66666666666666,100.0,92.4731182795699,0.5
+iris-versicolor,12,Keskin (makale),84.0,12.0,85.33333333333334,93.33333333333333,88.42105263157895,
+iris-versicolor,12,Kapsama skoru + ayarli esik,86.0,32.0,80.0,84.31372549019608,85.14851485148515,
+iris-versicolor,12,FIS ucgen mamdani centroid + ayarli esik,100.0,32.0,89.33333333333333,86.20689655172413,92.5925925925926,0.3703898153969366
+iris-versicolor,12,FIS ucgen sugeno + ayarli esik,100.0,32.0,89.33333333333333,86.20689655172413,92.5925925925926,0.24003824262994966
+iris-versicolor,13,Keskin (makale),98.0,12.0,94.66666666666667,94.23076923076923,96.07843137254902,
+iris-versicolor,13,Kapsama skoru + ayarli esik,92.0,4.0,93.33333333333333,97.87234042553192,94.84536082474226,
+iris-versicolor,13,FIS ucgen mamdani centroid + ayarli esik,96.0,16.0,92.0,92.3076923076923,94.11764705882352,0.347878928614528
+iris-versicolor,13,FIS ucgen sugeno + ayarli esik,96.0,16.0,92.0,92.3076923076923,94.11764705882352,0.2063841252239727
+iris-versicolor,14,Keskin (makale),94.0,16.0,90.66666666666666,92.15686274509804,93.06930693069307,
+iris-versicolor,14,Kapsama skoru + ayarli esik,86.0,4.0,89.33333333333333,97.72727272727273,91.48936170212765,
+iris-versicolor,14,FIS ucgen mamdani centroid + ayarli esik,86.0,4.0,89.33333333333333,97.72727272727273,91.48936170212765,0.5000000000000001
+iris-versicolor,14,FIS ucgen sugeno + ayarli esik,86.0,4.0,89.33333333333333,97.72727272727273,91.48936170212765,0.5
+iris-versicolor,15,Keskin (makale),82.0,8.0,85.33333333333334,95.34883720930233,88.17204301075269,
+iris-versicolor,15,Kapsama skoru + ayarli esik,82.0,8.0,85.33333333333334,95.34883720930233,88.17204301075269,
+iris-versicolor,15,FIS ucgen mamdani centroid + ayarli esik,84.0,8.0,86.66666666666667,95.45454545454545,89.36170212765958,0.30695119605698984
+iris-versicolor,15,FIS ucgen sugeno + ayarli esik,84.0,4.0,88.0,97.67441860465115,90.32258064516128,0.152130828122709
+iris-versicolor,16,Keskin (makale),98.0,12.0,94.66666666666667,94.23076923076923,96.07843137254902,
+iris-versicolor,16,Kapsama skoru + ayarli esik,92.0,8.0,92.0,95.83333333333334,93.87755102040816,
+iris-versicolor,16,FIS ucgen mamdani centroid + ayarli esik,94.0,12.0,92.0,94.0,94.0,0.5
+iris-versicolor,16,FIS ucgen sugeno + ayarli esik,94.0,12.0,92.0,94.0,94.0,0.5
+iris-versicolor,17,Keskin (makale),96.0,4.0,96.0,97.95918367346938,96.96969696969697,
+iris-versicolor,17,Kapsama skoru + ayarli esik,92.0,4.0,93.33333333333333,97.87234042553192,94.84536082474226,
+iris-versicolor,17,FIS ucgen mamdani centroid + ayarli esik,78.0,0.0,85.33333333333334,100.0,87.64044943820225,0.49311306955164497
+iris-versicolor,17,FIS ucgen sugeno + ayarli esik,78.0,0.0,85.33333333333334,100.0,87.64044943820225,0.49074607995533975
+iris-versicolor,18,Keskin (makale),88.0,12.0,88.0,93.61702127659575,90.72164948453609,
+iris-versicolor,18,Kapsama skoru + ayarli esik,98.0,16.0,93.33333333333333,92.45283018867924,95.14563106796116,
+iris-versicolor,18,FIS ucgen mamdani centroid + ayarli esik,94.0,24.0,88.0,88.67924528301887,91.2621359223301,0.4394056507422787
+iris-versicolor,18,FIS ucgen sugeno + ayarli esik,94.0,24.0,88.0,88.67924528301887,91.2621359223301,0.36181722642109604
+iris-versicolor,19,Keskin (makale),88.0,24.0,84.0,88.0,88.0,
+iris-versicolor,19,Kapsama skoru + ayarli esik,82.0,8.0,85.33333333333334,95.34883720930233,88.17204301075269,
+iris-versicolor,19,FIS ucgen mamdani centroid + ayarli esik,98.0,12.0,94.66666666666667,94.23076923076923,96.07843137254902,0.4543377746659376
+iris-versicolor,19,FIS ucgen sugeno + ayarli esik,98.0,12.0,94.66666666666667,94.23076923076923,96.07843137254902,0.39275281778127935
+iris-virginica,0,Keskin (makale),92.0,0.0,94.66666666666667,100.0,95.83333333333334,
+iris-virginica,0,Kapsama skoru + ayarli esik,98.0,4.0,97.33333333333334,98.0,98.0,
+iris-virginica,0,FIS ucgen mamdani centroid + ayarli esik,84.0,16.0,84.0,91.30434782608695,87.49999999999999,0.18911031523632002
+iris-virginica,0,FIS ucgen sugeno + ayarli esik,86.0,16.0,85.33333333333334,91.48936170212765,88.65979381443299,0.02796650855596549
+iris-virginica,1,Keskin (makale),96.0,8.0,94.66666666666667,96.0,96.0,
+iris-virginica,1,Kapsama skoru + ayarli esik,96.0,0.0,97.33333333333334,100.0,97.95918367346938,
+iris-virginica,1,FIS ucgen mamdani centroid + ayarli esik,92.0,16.0,89.33333333333333,92.0,92.0,0.21576288465206683
+iris-virginica,1,FIS ucgen sugeno + ayarli esik,92.0,16.0,89.33333333333333,92.0,92.0,0.05590010439801111
+iris-virginica,2,Keskin (makale),98.0,12.0,94.66666666666667,94.23076923076923,96.07843137254902,
+iris-virginica,2,Kapsama skoru + ayarli esik,66.0,4.0,76.0,97.05882352941177,78.57142857142857,
+iris-virginica,2,FIS ucgen mamdani centroid + ayarli esik,70.0,4.0,78.66666666666666,97.22222222222221,81.3953488372093,0.4187814132082255
+iris-virginica,2,FIS ucgen sugeno + ayarli esik,66.0,4.0,76.0,97.05882352941177,78.57142857142857,0.362002342914437
+iris-virginica,3,Keskin (makale),92.0,4.0,93.33333333333333,97.87234042553192,94.84536082474226,
+iris-virginica,3,Kapsama skoru + ayarli esik,64.0,0.0,76.0,100.0,78.04878048780488,
+iris-virginica,3,FIS ucgen mamdani centroid + ayarli esik,92.0,24.0,86.66666666666667,88.46153846153845,90.19607843137256,0.2260125869230883
+iris-virginica,3,FIS ucgen sugeno + ayarli esik,92.0,20.0,88.0,90.19607843137256,91.0891089108911,0.065350853475845
+iris-virginica,4,Keskin (makale),90.0,4.0,92.0,97.82608695652173,93.75,
+iris-virginica,4,Kapsama skoru + ayarli esik,90.0,0.0,93.33333333333333,100.0,94.73684210526316,
+iris-virginica,4,FIS ucgen mamdani centroid + ayarli esik,64.0,0.0,76.0,100.0,78.04878048780488,0.6197079917919462
+iris-virginica,4,FIS ucgen sugeno + ayarli esik,66.0,0.0,77.33333333333333,100.0,79.51807228915662,0.75
+iris-virginica,5,Keskin (makale),96.0,8.0,94.66666666666667,96.0,96.0,
+iris-virginica,5,Kapsama skoru + ayarli esik,96.0,8.0,94.66666666666667,96.0,96.0,
+iris-virginica,5,FIS ucgen mamdani centroid + ayarli esik,96.0,16.0,92.0,92.3076923076923,94.11764705882352,0.49999999999999994
+iris-virginica,5,FIS ucgen sugeno + ayarli esik,96.0,16.0,92.0,92.3076923076923,94.11764705882352,0.5
+iris-virginica,6,Keskin (makale),96.0,4.0,96.0,97.95918367346938,96.96969696969697,
+iris-virginica,6,Kapsama skoru + ayarli esik,92.0,0.0,94.66666666666667,100.0,95.83333333333334,
+iris-virginica,6,FIS ucgen mamdani centroid + ayarli esik,98.0,8.0,96.0,96.07843137254902,97.02970297029701,0.46470597409480063
+iris-virginica,6,FIS ucgen sugeno + ayarli esik,98.0,8.0,96.0,96.07843137254902,97.02970297029701,0.41533628044724025
+iris-virginica,7,Keskin (makale),86.0,4.0,89.33333333333333,97.72727272727273,91.48936170212765,
+iris-virginica,7,Kapsama skoru + ayarli esik,96.0,16.0,92.0,92.3076923076923,94.11764705882352,
+iris-virginica,7,FIS ucgen mamdani centroid + ayarli esik,96.0,44.0,82.66666666666667,81.35593220338984,88.07339449541286,0.21384819724877263
+iris-virginica,7,FIS ucgen sugeno + ayarli esik,96.0,44.0,82.66666666666667,81.35593220338984,88.07339449541286,0.05418206517339024
+iris-virginica,8,Keskin (makale),90.0,4.0,92.0,97.82608695652173,93.75,
+iris-virginica,8,Kapsama skoru + ayarli esik,88.0,4.0,90.66666666666666,97.77777777777777,92.63157894736842,
+iris-virginica,8,FIS ucgen mamdani centroid + ayarli esik,57.99999999999999,0.0,72.0,100.0,73.41772151898734,0.4961621076465525
+iris-virginica,8,FIS ucgen sugeno + ayarli esik,57.99999999999999,0.0,72.0,100.0,73.41772151898734,0.49223763579144264
+iris-virginica,9,Keskin (makale),98.0,8.0,96.0,96.07843137254902,97.02970297029701,
+iris-virginica,9,Kapsama skoru + ayarli esik,88.0,4.0,90.66666666666666,97.77777777777777,92.63157894736842,
+iris-virginica,9,FIS ucgen mamdani centroid + ayarli esik,88.0,8.0,89.33333333333333,95.65217391304348,91.66666666666666,0.5
+iris-virginica,9,FIS ucgen sugeno + ayarli esik,88.0,8.0,89.33333333333333,95.65217391304348,91.66666666666666,0.5
+iris-virginica,10,Keskin (makale),96.0,4.0,96.0,97.95918367346938,96.96969696969697,
+iris-virginica,10,Kapsama skoru + ayarli esik,98.0,8.0,96.0,96.07843137254902,97.02970297029701,
+iris-virginica,10,FIS ucgen mamdani centroid + ayarli esik,94.0,48.0,80.0,79.66101694915254,86.23853211009174,0.24923217017321725
+iris-virginica,10,FIS ucgen sugeno + ayarli esik,94.0,36.0,84.0,83.92857142857143,88.67924528301886,0.08789574362090048
+iris-virginica,11,Keskin (makale),94.0,8.0,93.33333333333333,95.91836734693877,94.94949494949495,
+iris-virginica,11,Kapsama skoru + ayarli esik,96.0,8.0,94.66666666666667,96.0,96.0,
+iris-virginica,11,FIS ucgen mamdani centroid + ayarli esik,76.0,8.0,81.33333333333333,95.0,84.44444444444444,0.21255519466245046
+iris-virginica,11,FIS ucgen sugeno + ayarli esik,74.0,8.0,80.0,94.87179487179486,83.14606741573033,0.053030415351603834
+iris-virginica,12,Keskin (makale),100.0,16.0,94.66666666666667,92.5925925925926,96.15384615384615,
+iris-virginica,12,Kapsama skoru + ayarli esik,98.0,4.0,97.33333333333334,98.0,98.0,
+iris-virginica,12,FIS ucgen mamdani centroid + ayarli esik,94.0,4.0,94.66666666666667,97.91666666666666,95.91836734693877,0.5
+iris-virginica,12,FIS ucgen sugeno + ayarli esik,94.0,4.0,94.66666666666667,97.91666666666666,95.91836734693877,0.5
+iris-virginica,13,Keskin (makale),98.0,4.0,97.33333333333334,98.0,98.0,
+iris-virginica,13,Kapsama skoru + ayarli esik,98.0,4.0,97.33333333333334,98.0,98.0,
+iris-virginica,13,FIS ucgen mamdani centroid + ayarli esik,86.0,24.0,82.66666666666667,87.75510204081633,86.86868686868686,0.19542106786595556
+iris-virginica,13,FIS ucgen sugeno + ayarli esik,86.0,20.0,84.0,89.58333333333334,87.75510204081633,0.03808464647113847
+iris-virginica,14,Keskin (makale),96.0,0.0,97.33333333333334,100.0,97.95918367346938,
+iris-virginica,14,Kapsama skoru + ayarli esik,88.0,0.0,92.0,100.0,93.61702127659575,
+iris-virginica,14,FIS ucgen mamdani centroid + ayarli esik,72.0,0.0,81.33333333333333,100.0,83.72093023255813,0.5049659498922578
+iris-virginica,14,FIS ucgen sugeno + ayarli esik,72.0,0.0,81.33333333333333,100.0,83.72093023255813,0.5136571281255279
+iris-virginica,15,Keskin (makale),100.0,24.0,92.0,89.28571428571429,94.33962264150945,
+iris-virginica,15,Kapsama skoru + ayarli esik,88.0,0.0,92.0,100.0,93.61702127659575,
+iris-virginica,15,FIS ucgen mamdani centroid + ayarli esik,82.0,0.0,88.0,100.0,90.10989010989012,0.4355189565512896
+iris-virginica,15,FIS ucgen sugeno + ayarli esik,84.0,0.0,89.33333333333333,100.0,91.30434782608697,0.39854426951243366
+iris-virginica,16,Keskin (makale),92.0,8.0,92.0,95.83333333333334,93.87755102040816,
+iris-virginica,16,Kapsama skoru + ayarli esik,96.0,12.0,93.33333333333333,94.11764705882352,95.04950495049505,
+iris-virginica,16,FIS ucgen mamdani centroid + ayarli esik,76.0,4.0,82.66666666666667,97.43589743589743,85.3932584269663,0.3352089699545994
+iris-virginica,16,FIS ucgen sugeno + ayarli esik,80.0,4.0,85.33333333333334,97.5609756097561,87.91208791208791,0.18871398366343267
+iris-virginica,17,Keskin (makale),88.0,8.0,89.33333333333333,95.65217391304348,91.66666666666666,
+iris-virginica,17,Kapsama skoru + ayarli esik,84.0,0.0,89.33333333333333,100.0,91.30434782608697,
+iris-virginica,17,FIS ucgen mamdani centroid + ayarli esik,86.0,4.0,89.33333333333333,97.72727272727273,91.48936170212765,0.3042103100360163
+iris-virginica,17,FIS ucgen sugeno + ayarli esik,84.0,4.0,88.0,97.67441860465115,90.32258064516128,0.18876158032180673
+iris-virginica,18,Keskin (makale),92.0,12.0,90.66666666666666,93.87755102040816,92.92929292929293,
+iris-virginica,18,Kapsama skoru + ayarli esik,90.0,12.0,89.33333333333333,93.75,91.83673469387756,
+iris-virginica,18,FIS ucgen mamdani centroid + ayarli esik,86.0,36.0,78.66666666666666,82.6923076923077,84.31372549019608,0.19418014050944446
+iris-virginica,18,FIS ucgen sugeno + ayarli esik,86.0,36.0,78.66666666666666,82.6923076923077,84.31372549019608,0.03703569227103845
+iris-virginica,19,Keskin (makale),92.0,8.0,92.0,95.83333333333334,93.87755102040816,
+iris-virginica,19,Kapsama skoru + ayarli esik,92.0,8.0,92.0,95.83333333333334,93.87755102040816,
+iris-virginica,19,FIS ucgen mamdani centroid + ayarli esik,68.0,4.0,77.33333333333333,97.14285714285714,80.0,0.37741461393419723
+iris-virginica,19,FIS ucgen sugeno + ayarli esik,70.0,4.0,78.66666666666666,97.22222222222221,81.3953488372093,0.2511103867859958
