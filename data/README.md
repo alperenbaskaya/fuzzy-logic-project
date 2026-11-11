@@ -1,6 +1,12 @@
 # Veri Setleri
 
-Ham veri dosyaları boyut ve lisans nedeniyle repoya yüklenmez (`.gitignore`). Aşağıdaki dosyaları indirip `data/raw/` klasörüne koyun.
+Ham veri dosyaları boyut ve lisans nedeniyle repoya yüklenmez (`.gitignore`). Hepsini indirip `data/raw/` klasörüne yerleştirmek için:
+
+```bash
+python -m src.download_data
+```
+
+Betik dosya boyutlarını kontrol eder; yarım kalan bir indirmede tekrar çalıştırmak yeterlidir.
 
 | Veri seti | Kullanıldığı deney | Kaynak | Beklenen dosya |
 |---|---|---|---|

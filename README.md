@@ -80,7 +80,7 @@ Kural tabanı:
 | Skin Segmentation (UCI) | E2, E4 (makale Tablo 8) | 245.057 piksel, 3 özellik; deri = self |
 | BoT-IoT %5 alt küme (UNSW) | E3, E4 (makale Tablo 5) | 477 normal + 5.050 saldırı; makale özellikleri (6) ve temiz özellikler (9) |
 
-İndirme ve hazırlama adımları: [`data/README.md`](data/README.md). Ham veriler `.gitignore` ile repo dışında tutulur.
+İndirme: `python -m src.download_data`. Kaynaklar ve hazırlama adımları: [`data/README.md`](data/README.md). Ham veriler `.gitignore` ile repo dışında tutulur.
 
 ## Project Structure
 
@@ -120,6 +120,9 @@ Python 3.10 veya üzeri. Test edilen sürümler: Python 3.13, numpy 2.5, scipy 1
 ## How to Run
 
 ```bash
+# 0) veri setlerini indir (~68 MB indirme, acilinca ~1 GB; Iris icin gerekmez)
+python -m src.download_data
+
 # canli demo
 python demo.py --g1 1.1 --g2 0.4 --plot
 python demo.py --g1 1.1 --g2 0.4 --mf gauss --inference sugeno
