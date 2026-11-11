@@ -17,7 +17,7 @@ from src.naim import NaIM, NaIMConfig
 
 FIG = Path(__file__).resolve().parents[2] / "results" / "figures"
 INK, MUTED, GRID = "#1f1f1e", "#6b6a64", "#e4e3dd"
-COLORS = {"Kapsama skoru (FIS yok)": "#6b6a64", "FIS ucgen Mamdani": "#2a78d6", "FIS Gauss Sugeno": "#eb6834"}
+COLORS = {"Kapsama skoru (FIS yok)": "#6b6a64", "FIS üçgen Mamdani": "#2a78d6", "FIS Gauss Sugeno": "#eb6834"}
 
 
 def one(ds, frac, seed, max_test=None):
@@ -34,7 +34,7 @@ def one(ds, frac, seed, max_test=None):
     g1, g2 = fd.inputs(X_te)
     scores = {"Kapsama skoru (FIS yok)": g1}
     fd.cfg = FuzzyConfig("tri", "mamdani")
-    scores["FIS ucgen Mamdani"] = fd.score_from_inputs(g1, g2)
+    scores["FIS üçgen Mamdani"] = fd.score_from_inputs(g1, g2)
     fd.cfg = FuzzyConfig("gauss", "sugeno")
     scores["FIS Gauss Sugeno"] = fd.score_from_inputs(g1, g2)
     crisp = model.predict(X_te)
@@ -56,9 +56,9 @@ for ax, (title, ds, frac, seed, mt, xl, yl) in zip(axes, [
             label=f"Keskin karar (tek nokta)")
     ax.set_xlim(-0.02 * xl, xl)
     ax.set_ylim(yl, 100.2)
-    ax.set_title(f"{title} (ilk tekrar, eksenler yakinlastirildi)", color=INK, fontsize=10)
-    ax.set_xlabel("yanlis alarm orani FAR (%)")
-    ax.set_ylabel("tespit orani DR (%)")
+    ax.set_title(f"{title} (ilk tekrar, eksenler yakınlaştırıldı)", color=INK, fontsize=10)
+    ax.set_xlabel("yanlış alarm oranı FAR (%)")
+    ax.set_ylabel("tespit oranı DR (%)")
     ax.grid(True, color=GRID, lw=0.6)
     for sp in ("top", "right"):
         ax.spines[sp].set_visible(False)

@@ -32,8 +32,8 @@ GRID = {
     "b_threshold": [0.05, 0.1, 0.15, 0.2, 0.3],
     "r_self": [0.01, 0.02, 0.05, 0.08, 0.12],
 }
-LABEL = {"fcm_c": "FCM kume sayisi c", "fcm_m": "bulaniklik katsayisi m",
-         "b_threshold": "alt populasyon esigi b", "r_self": "self yaricapi r_self"}
+LABEL = {"fcm_c": "FCM küme sayısı c", "fcm_m": "bulanıklık katsayısı m",
+         "b_threshold": "alt popülasyon eşiği b", "r_self": "self yarıçapı r_self"}
 
 
 def sweep(ds, frac, params, seed0, max_test=None):
@@ -79,8 +79,8 @@ def plot(df):
     g = skin.groupby("value")["n_dist"].mean() / 1e6
     fig, ax = plt.subplots(figsize=(4.6, 3.2))
     ax.plot(g.index, g.values, color="#eb6834", lw=2, marker="o", ms=5)
-    ax.set_xlabel("FCM kume sayisi c")
-    ax.set_ylabel("uzaklik hesabi (milyon, Skin)")
+    ax.set_xlabel("FCM küme sayısı c")
+    ax.set_ylabel("uzaklık hesabı (milyon, Skin)")
     ax.set_ylim(bottom=0)
     ax.grid(True, color="#e4e3dd", lw=0.6)
     for s in ("top", "right"):

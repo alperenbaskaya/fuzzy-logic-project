@@ -76,13 +76,14 @@ def plot_inference(fd, r, s):
 
     y = r["y"]
     fig, ax = plt.subplots(figsize=(6.5, 3))
+    show = {"Normal": "Normal", "Supheli": "Şüpheli", "Saldiri": "Saldırı"}
     for color, (name, p) in zip(["#2a78d6", "#eb6834", "#1baf7a"], OUTPUT.items()):
-        ax.plot(y, membership(y, p, fd.cfg.mf), color=color, lw=1.2, ls="--", label=name)
-    ax.fill_between(y, r["agg"][0], color="#6b6a64", alpha=0.35, label="birlestirilmis cikti")
+        ax.plot(y, membership(y, p, fd.cfg.mf), color=color, lw=1.2, ls="--", label=show[name])
+    ax.fill_between(y, r["agg"][0], color="#6b6a64", alpha=0.35, label="birleştirilmiş çıktı")
     ax.axvline(s, color="#1f1f1e", lw=2)
     ax.text(s, 1.02, f" {fd.cfg.defuzz} = {s:.2f}", fontsize=9)
     ax.set_xlabel("anomali derecesi")
-    ax.set_ylabel("uyelik")
+    ax.set_ylabel("üyelik")
     ax.set_ylim(0, 1.12)
     ax.legend(fontsize=8, loc="center right", frameon=False)
     fig.tight_layout()
