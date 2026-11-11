@@ -128,20 +128,24 @@ class FuzzyDetector:
         g2 = np.clip(self.ss.nearest_batch(X) / self.d_ref, 0, 2)
         return g1, g2
 
-    def score_from_inputs(self, g1, g2):
+    def infer(self, g1, g2):
+        # butun ara adimlari dondurur (demo.py bunu kullaniyor)
         cfg = self.cfg
+        g1, g2 = np.atleast_1d(np.asarray(g1, float)), np.atleast_1d(np.asarray(g2, float))
         # 1) bulaniklastirma
         mu1 = {k: membership(g1, p, cfg.mf) for k, p in INPUT1.items()}
         mu2 = {k: membership(g2, p, cfg.mf) for k, p in INPUT2.items()}
 
         # 2) kural atesleme gucu: VE = min
         w = np.stack([np.minimum(mu1[a], mu2[b]) for a, b, _ in RULES], axis=1)
+        out = {"mu1": mu1, "mu2": mu2, "w": w}
 
         if cfg.inference == "sugeno":
             # agirlikli ortalama
             z = np.array([SUGENO_CONST[c] for _, _, c in RULES])
             s = w.sum(axis=1)
-            return np.where(s > 1e-12, (w * z).sum(axis=1) / np.where(s > 0, s, 1), 0.5)
+            out["score"] = np.where(s > 1e-12, (w * z).sum(axis=1) / np.where(s > 0, s, 1), 0.5)
+            return out
 
         # 3) mamdani: her kural cikti kumesini kirpar (min), sonra max ile birlestir
         y = np.linspace(0, 1, cfg.n_points)
@@ -151,7 +155,11 @@ class FuzzyDetector:
             agg = np.maximum(agg, np.minimum(w[:, j:j + 1], out_mf[c][None, :]))
 
         # 4) durulastirma
-        return defuzzify(y, agg, cfg.defuzz)
+        out.update(y=y, agg=agg, score=defuzzify(y, agg, cfg.defuzz))
+        return out
+
+    def score_from_inputs(self, g1, g2):
+        return self.infer(g1, g2)["score"]
 
     def score(self, X):
         return self.score_from_inputs(*self.inputs(X))
