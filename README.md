@@ -236,7 +236,7 @@ Yönerge 6.2 özet tablosu (Skin, baseline = keskin karar, geliştirilen = FIS M
 | F1 % | 99.24 | 99.67 | +0.43 (p = 0.002) |
 | DR % | 98.49 | 99.36 | +0.86 (p = 0.002) |
 | FAR % | 0.01 | 0.04 | +0.03 (p = 0.22, anlamsız) |
-| Test süresi (µs/örnek) | 0.11 | 38.4 | ~350 kat |
+| Test süresi (µs/örnek) | 0.11 | 38.4 | ~340 kat |
 
 **Bulgular**
 
